@@ -51,7 +51,7 @@ class Percolation {
         return (n * (i - 1)) + (j - 1);
     }
     /**
-     * Links open sites.
+     * Link open sites.
      *
      * @param      row   The row
      * @param      col   The col
@@ -59,6 +59,7 @@ class Percolation {
     private void linkOpenSites(final int row, final int col) {
         if (connected[col] && !uf.connected(row, col)) {
             uf.union(row, col);
+            System.out.println(row);
         }
     }
     /**
