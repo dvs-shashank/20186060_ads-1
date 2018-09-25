@@ -59,7 +59,7 @@ class Percolation {
     private void linkOpenSites(final int row, final int col) {
         if (connected[col] && !uf.connected(row, col)) {
             uf.union(row, col);
-            System.out.println(row);
+            // System.out.println(row);
         }
     }
     /**
