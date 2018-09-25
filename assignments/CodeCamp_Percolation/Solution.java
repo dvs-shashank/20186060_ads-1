@@ -1,7 +1,6 @@
 import java.util.Scanner;
 /**
  * Class for percolation.
- * @author Shashank.
  */
 class Percolation {
     /**
