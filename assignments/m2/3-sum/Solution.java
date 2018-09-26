@@ -19,22 +19,22 @@ public final class Solution {
         Scanner scan = new Scanner(System.in);
         int size = scan.nextInt();
         int count = 0;
-        int[] threesome = new int[size];
+        int[] threesum = new int[size];
         for (int i = 0; i < size; i++) {
-            threesome[i] = scan.nextInt();
+            threesum[i] = scan.nextInt();
         }
-        Arrays.sort(threesome);
+        Arrays.sort(threesum);
         for (int i = 0; i < size - 2; i++) {
             int j = i + 1;
             int k = size - 1;
             while (j < k) {
-                if (threesome[i] + threesome[j]
-                        + threesome[k] == 0) {
+                if (threesum[i] + threesum[j]
+                        + threesum[k] == 0) {
                     count++;
                     j++;
                     k--;
-                } else if (threesome[i] + threesome[j]
-                           + threesome[k] < 0) {
+                } else if (threesum[i] + threesum[j]
+                           + threesum[k] < 0) {
                     j++;
                 } else {
                     k--;
