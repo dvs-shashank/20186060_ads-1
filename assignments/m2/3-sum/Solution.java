@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
@@ -8,6 +8,7 @@ class Solution {
 		for (int i = 0; i < size; i++) {
 			threesome[i] = scan.nextInt();
 		}
+		Arrays.sort(threesome);
 		for (int i = 0; i < size - 2; i++) {
 			int j = i + 1;
 			int k = size - 1;
