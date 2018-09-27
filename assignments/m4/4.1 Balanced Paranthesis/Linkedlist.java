@@ -15,7 +15,7 @@ class Linkedlist {
 		Node oldfirst = firstelement;
 		firstelement = new Node();
 		firstelement.item = item;
-		firstelement = oldfirst;
+		firstelement.nextAddress = oldfirst;
 	}
 	public char pop() {
 		char item = firstelement.item;
