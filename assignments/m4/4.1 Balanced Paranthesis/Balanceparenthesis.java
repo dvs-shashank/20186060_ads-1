@@ -15,7 +15,7 @@ class Balanceparenthesis {
 					obj.pop();
 				} else if (character == '}' && obj.topelement() == '{') {
 					obj.pop();
-				} else if (character == ']' && obj.topelement() == '(') {
+				} else if (character == ']' && obj.topelement() == '[') {
 					obj.pop();
 				} else return false;
 			}
