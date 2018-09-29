@@ -6,7 +6,7 @@ public class Solution {
     /**
      * Constructs the object.
      */
-    Solution() {
+    private Solution() {
 
     }
     /**
@@ -34,7 +34,7 @@ public class Solution {
                 qDigits);
             System.out.println(AddLargeNumbers.digitsToNumber(result));
             break;
-        case "default":
+        default:
         break;
         }
     }
