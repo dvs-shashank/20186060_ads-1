@@ -51,10 +51,9 @@ class AddLargeNumbers {
      * @return     list after adding.
      */
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
-        try{
-
-        }
-        catch (Exception e) {
+        if (list1.getSize() != 0 && list2.getSize()!=0) {
+            
+        } else {
 
         }
         return null;
