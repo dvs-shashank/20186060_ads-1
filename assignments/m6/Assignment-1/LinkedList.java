@@ -1,3 +1,6 @@
+/**
+ * List of linkeds.
+ */
 class LinkedList {
     private int size = 0;
     private Node head;
@@ -9,6 +12,9 @@ class LinkedList {
      */
     public int getSize() {
         return this.size;
+    }
+    public Node getHead() {
+        return head;
     }
     /**
      * add data into list.

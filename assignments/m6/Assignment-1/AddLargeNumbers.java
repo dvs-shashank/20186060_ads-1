@@ -24,21 +24,6 @@ class AddLargeNumbers {
         return list;
     }
     /**
-     * Returns a string representation of the object.
-     *
-     * @return     String representation of the object.
-     */
-    public String toString() {
-        System.out.println("hi");
-        String str = "";
-        int count = 0;
-        while (count < a) {
-            count++;
-        }
-        return "hiii";
-    }
-
-    /**
      * digits to number.
      *
      * @param      list  The list
@@ -46,8 +31,16 @@ class AddLargeNumbers {
      * @return     digits to number as string.
      */
     public static String digitsToNumber(LinkedList list) {
-        return null;
-
+        String str = "";
+        int counter = 0;
+        Node temp;
+        temp = list.getHead();
+        while (counter != list.getSize()) {
+            str += temp.getData();
+            temp = temp.getnext();
+            counter++;
+        }
+        return str;
     }
     /**
      * Adds large numbers.
