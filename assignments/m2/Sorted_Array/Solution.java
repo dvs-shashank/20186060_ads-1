@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 /**
- * class Solution,
+ * class Solution.
  */
 public final class Solution {
     /**
@@ -11,7 +11,7 @@ public final class Solution {
 
     }
     /**
-     * { function_description }
+     * convert to int array.
      *
      * @param      s     String
      *
