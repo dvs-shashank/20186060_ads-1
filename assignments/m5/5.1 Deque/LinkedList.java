@@ -1,21 +1,45 @@
+/**
+ * List of linkeds.
+ *
+ * @param      <yuvraj>  The yuvraj
+ */
 class LinkedList<yuvraj> {
     Node head;
     int size;
+    /**
+     * Class for node.
+     */
     class Node {
         yuvraj data;
         Node link;
+        /**
+         * Constructs the object.
+         */
         Node() {
             this.data = null;
             this.link = null;
         }
+        /**
+         * Constructs the object.
+         *
+         * @param      data  The data
+         */
         Node(yuvraj data) {
             this.data = data;
             this.link = null;
         }
     }
+    /**
+     * Constructs the object.
+     */
     LinkedList() {
         size = 0;
     }
+    /**
+     * Adds an at end.
+     *
+     * @param      data  The data
+     */
     public void addAtEnd(final yuvraj data) {
         Node newNode;
         if (size == 0) {
@@ -32,7 +56,11 @@ class LinkedList<yuvraj> {
         current.link = newNode;
         size++;
     }
-   
+    /**
+     * Adds an at start.
+     *
+     * @param      data  The data
+     */
     public void addAtStart(final yuvraj data) {
         Node newNode = new Node(data);
         newNode.link = head;
@@ -58,7 +86,9 @@ class LinkedList<yuvraj> {
         size++;
 
     }
- 
+    /**
+     * Removes an at end.
+     */
     public void removeAtEnd() {
         if (size == 0) {
             System.out.println("Deck is Empty");
@@ -73,7 +103,9 @@ class LinkedList<yuvraj> {
         current.link = null;
         size--;
     }
- 
+    /**
+     * Removes an at start.
+     */
     public void removeAtStart() {
         if (size == 0) {
             System.out.println("Deck is Empty");
@@ -84,7 +116,11 @@ class LinkedList<yuvraj> {
         current.link = null;
         size--;
     }
-  
+    /**
+     * Removes an at location.
+     *
+     * @param      location  The location
+     */
     public void removeAtLocation(final int location) {
         if (size == 0) {
             System.out.println("Deck is Empty");
@@ -110,7 +146,11 @@ class LinkedList<yuvraj> {
         size--;
 
     }
-  
+    /**
+     * Removes an element.
+     *
+     * @param      element  The element
+     */
     public void removeElement(final yuvraj element) {
         try {
             Node current = head;
@@ -123,7 +163,9 @@ class LinkedList<yuvraj> {
             System.out.println("No element found for removeElement");
         }
     }
- 
+    /**
+     * for printing brackets
+     */
     public void print() {
         if (size == 0) {
             System.out.println("[]");
@@ -152,10 +194,21 @@ class LinkedList<yuvraj> {
         str += current.data + "]";
         return str;
     }
-  
+    /**
+     * Gets the size.
+     *
+     * @return     The size.
+     */
     public int getSize() {
         return this.size;
     }
+    /**
+     * Gets the object.
+     *
+     * @param      index  The index
+     *
+     * @return     The object.
+     */
     public yuvraj getObject(final int index) {
         if (size == 0) {
             return head.data;

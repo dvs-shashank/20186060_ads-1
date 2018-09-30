@@ -1,8 +1,18 @@
 import java.util.Scanner;
+/**
+ * class solution.
+ */
 public final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
     }
-   
+    /**
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Deque<Integer> d = new Deque<Integer>();
         Scanner scan = new Scanner(System.in);
@@ -33,35 +43,60 @@ public final class Solution {
         }
     }
 }
+/**
+ * Class for deque.
+ *
+ * @param      <yuvraj>  The yuvraj
+ */
 class Deque<yuvraj> {
-
     private int size;
     private LinkedList<yuvraj> linkedQueue;
-
+    /**
+     * Constructs the object.
+     */
     Deque() {
         linkedQueue = new LinkedList<yuvraj>();
         size = 0;
     }
+    /**
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
         return size == 0;
     }
-   
+    /**
+     * size calculation.
+     *
+     * @return     size.
+     */
     public int size() {
         return size;
     }
-   
+    /**
+     * Pushes a left.
+     *
+     * @param      item  The item
+     */
     public void pushLeft(final yuvraj item) {
         linkedQueue.addAtStart(item);
         size++;
         linkedQueue.print();
     }
-   
+    /**
+     * Pushes a right.
+     *
+     * @param      item  The item
+     */
     public void pushRight(final yuvraj item) {
         linkedQueue.addAtEnd(item);
         size++;
         linkedQueue.print();
     }
-   
+    /**
+     * remove from left.
+     */
     public void popLeft() {
         if (size == 0) {
             System.out.println("Deck is empty");
@@ -74,7 +109,10 @@ class Deque<yuvraj> {
             return;
         }
         linkedQueue.print();
-    }   
+    }
+    /**
+     * remove from right
+     */
     public void popRight() {
         if (size == 0) {
             System.out.println("Deck is empty");
