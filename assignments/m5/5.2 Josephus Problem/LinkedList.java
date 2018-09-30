@@ -1,25 +1,42 @@
+/**
+ * List of linkeds.
+ *
+ * @param      <Koushal>  The koushal
+ */
 class LinkedList<Koushal> {
     Node head;
     int size;
     class Node {
         Koushal data;
         Node link;
-
+        /**
+         * Constructs the object.
+         */
         Node() {
             this.data = null;
             this.link = null;
         }
-
+        /**
+         * Constructs the object.
+         *
+         * @param      data  The data
+         */
         Node(Koushal data) {
             this.data = data;
             this.link = null;
         }
     }
-
+    /**
+     * Constructs the object.
+     */
     LinkedList() {
         size = 0;
     }
-
+    /**
+     * Adds an at end.
+     *
+     * @param      data  The data
+     */
     public void addAtEnd(final Koushal data) {
         Node newNode;
         if (size == 0) {
@@ -36,14 +53,23 @@ class LinkedList<Koushal> {
         current.link = newNode;
         size++;
     }
-
+    /**
+     * Adds an at start.
+     *
+     * @param      data  The data
+     */
     public void addAtStart(final Koushal data) {
         Node newNode = new Node(data);
         newNode.link = head;
         head = newNode;
         size++;
     }
-
+    /**
+     * Adds an at location.
+     *
+     * @param      location  The location
+     * @param      data      The data
+     */
     public void addAtLocation(final int location, final Koushal data) {
         if (location > size) {
             System.out.println("Invalid position Exception in add at location.");
@@ -62,7 +88,9 @@ class LinkedList<Koushal> {
         size++;
 
     }
-
+    /**
+     * Removes an at end.
+     */
     public void removeAtEnd() {
         if (size == 0) {
             System.out.println("Deck is Empty");
@@ -78,6 +106,9 @@ class LinkedList<Koushal> {
         size--;
     }
 
+    /**
+     * Removes an at start.
+     */
     public void removeAtStart() {
         if (size == 0) {
             System.out.println("Deck is Empty");
@@ -89,6 +120,11 @@ class LinkedList<Koushal> {
         size--;
     }
 
+    /**
+     * Removes an at location.
+     *
+     * @param      location  The location
+     */
     public void removeAtLocation(final int location) {
         if (size == 0) {
             System.out.println("Deck is Empty");
@@ -115,6 +151,11 @@ class LinkedList<Koushal> {
 
     }
 
+    /**
+     * Removes an element.
+     *
+     * @param      element  The element
+     */
     public void removeElement(final Koushal element) {
         try {
             Node current = head;
@@ -128,6 +169,9 @@ class LinkedList<Koushal> {
         }
     }
 
+    /**
+     * { function_description }
+     */
     public void print() {
         if (size == 0) {
             System.out.println("[]");
@@ -143,6 +187,11 @@ class LinkedList<Koushal> {
         System.out.println();
     }
 
+    /**
+     * Gets the list.
+     *
+     * @return     The list.
+     */
     public String getList() {
         if (size == 0) {
             return "[]";
@@ -157,10 +206,22 @@ class LinkedList<Koushal> {
         return str;
     }
 
+    /**
+     * Gets the size.
+     *
+     * @return     The size.
+     */
     public int getSize() {
         return this.size;
     }
 
+    /**
+     * Gets the object.
+     *
+     * @param      index  The index
+     *
+     * @return     The object.
+     */
     public Koushal getObject(final int index) {
         if (size == 0) {
             return head.data;
