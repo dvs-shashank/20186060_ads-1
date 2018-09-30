@@ -9,7 +9,7 @@ public final class Solution {
     private Solution() {
     }
     /**
-     * { function_description }
+     * main method.
      *
      * @param      args  The arguments
      */
@@ -49,7 +49,13 @@ public final class Solution {
  * @param      <yuvraj>  The yuvraj
  */
 class Deque<yuvraj> {
+    /**
+     * size.
+     */
     private int size;
+    /**
+     * linekd queue.
+     */
     private LinkedList<yuvraj> linkedQueue;
     /**
      * Constructs the object.
@@ -111,7 +117,7 @@ class Deque<yuvraj> {
         linkedQueue.print();
     }
     /**
-     * remove from right
+     * remove from right.
      */
     public void popRight() {
         if (size == 0) {
