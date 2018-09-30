@@ -66,7 +66,7 @@ class LinkedList<yuvraj> {
         }
         Node current = head;
         int counter = 1;
-        while (counter < size) {
+        while (counter < size - 1) {
             current = current.link;
             counter++;
         }
