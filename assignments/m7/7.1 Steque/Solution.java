@@ -16,11 +16,11 @@ class Node {
    *
    *time complexity 1.
    *
-   * @param      value  The value
+   * @param      value1  The value
    * @param      node   The node
    */
-  Node(final int value, final Node node) {
-    this.value = value;
+  Node(final int value1, final Node node) {
+    this.value = value1;
     this.next = node;
   }
   /**
@@ -38,10 +38,10 @@ class Node {
    *
    * time complexity 1.
    *
-   * @param      value  The value.
+   * @param      value1  The value.
    */
-  public void setItem(final int value) {
-    this.value = value;
+  public void setItem(final int value1) {
+    this.value = value1;
   }
   /**
    * Gets the next.
@@ -79,7 +79,7 @@ class Node {
  */
 class Steque {
   /**
-   * head
+   * head.
    */
   private Node head;
   /**
