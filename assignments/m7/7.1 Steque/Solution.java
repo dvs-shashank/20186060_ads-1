@@ -25,7 +25,7 @@ class Node {
 	}
 	/**
 	 * Gets the item.
-	 * 
+	 *
 	 * time complexity 1.
 	 *
 	 * @return     The item.
@@ -35,7 +35,7 @@ class Node {
 	}
 	/**
 	 * Sets the item.
-	 * 
+	 *
 	 * time complexity 1.
 	 *
 	 * @param      value  The value.
@@ -45,7 +45,7 @@ class Node {
 	}
 	/**
 	 * Gets the next.
-	 * 
+	 *
 	 * time complexity 1.
 	 *
 	 * @return     The next.
@@ -55,7 +55,7 @@ class Node {
 	}
 	/**
 	 * Sets the next.
-	 * 
+	 *
 	 * time complexity 1.
 	 *
 	 * @param      node  The node
@@ -65,7 +65,7 @@ class Node {
 	}
 	/**
 	 * Returns a string representation of the object.
-	 * 
+	 *
 	 * time complexity 1.
 	 *
 	 * @return     String representation of the object.
@@ -92,7 +92,7 @@ class Steque {
 	private int size;
 	/**
 	 * Constructs the object.
-	 * 
+	 *
 	 * time complexity 1.
 	 */
 	Steque() {
@@ -102,7 +102,7 @@ class Steque {
 	}
 	/**
 	 * push the element.
-	 * 
+	 *
 	 * time complexity 1.
 	 *
 	 * @param      element  The element
@@ -117,7 +117,7 @@ class Steque {
 	}
 	/**
 	 * pop the element.
-	 * 
+	 *
 	 * time complexity 1.
 	 */
 	public void pop() {
@@ -134,7 +134,7 @@ class Steque {
 	}
 	/**
 	 * enqueue elements.
-	 * 
+	 *
 	 * time complexity 1.
 	 *
 	 * @param      element  The element
@@ -152,8 +152,8 @@ class Steque {
 	}
 	/**
 	 * Returns a string representation of the object.
-	 * 
-	 * 
+	 *
+	 *
 	 * time complexity n.
 	 *
 	 * @return     String representation of the object.
@@ -179,7 +179,7 @@ class Steque {
 public final class Solution {
 	/**
 	 * Constructs the object.
-	 * 
+	 *
 	 * time complexity 1.
 	 */
 	private Solution() {
