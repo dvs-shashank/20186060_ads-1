@@ -1,10 +1,10 @@
 import java.util.Scanner;
 class Node {
         private int value;
-        private Node friend;
+        private Node next;
         Node(final int v, final Node node) {
             this.value = v;
-            this.friend = node;
+            this.next = node;
         }
         public int getItem() {
             return this.value;
@@ -12,11 +12,11 @@ class Node {
         public void setItem(final int value) {
             this.value = value;
         }
-        public Node getFriend() {
-            return this.friend;
+        public Node getNext() {
+            return this.next;
         }
         public void setNext(final Node node) {
-            this.friend = node;
+            this.next = node;
         }
         public String toString() {
             return value + "";
@@ -40,12 +40,12 @@ class Steque {
     }
     public void pop() {
         if (head != null && tail != null) {
-            if (head.getFriend() == null && tail.getFriend() == null) {
+            if (head.getNext() == null && tail.getNext() == null) {
                 head = null;
                 tail = head;
                 size--;
             } else if (head != null) {
-                head = head.getFriend();
+                head = head.getNext();
                 size--;
             }
         }
@@ -70,12 +70,13 @@ class Steque {
             Node temp = head;
             while (temp != null) {
             sb.append(temp + ", ");
-            temp = temp.getFriend();
+            temp = temp.getNext();
             }
         return sb.toString().substring(0, sb.length() - 2);
         }
     }
 }
+
 public final class Solution {
     private Solution() {
     }
