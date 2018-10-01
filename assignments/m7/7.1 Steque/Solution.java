@@ -19,7 +19,7 @@ class Node {
 	 * @param      value  The value
 	 * @param      node   The node
 	 */
-	Node(final int value, final Node node) {
+	public Node(final int value, final Node node) {
 		this.value = value;
 		this.next = node;
 	}
