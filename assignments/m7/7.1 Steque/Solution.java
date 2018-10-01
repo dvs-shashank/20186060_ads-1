@@ -16,10 +16,10 @@ class Node {
 	 *
 	 *time complexity 1.
 	 *
-	 * @param      value  The value
+	 * @param      value1  The value
 	 * @param      node   The node
 	 */
-	public Node(final int value, final Node node) {
+	Node(final int value1, final Node node) {
 		this.value = value;
 		this.next = node;
 	}
