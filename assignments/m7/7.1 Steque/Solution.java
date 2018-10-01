@@ -40,7 +40,7 @@ class Node {
 	 *
 	 * @param      value  The value.
 	 */
-	public void setItem(final int value) {
+	public void setItem(final int value1) {
 		this.value = value;
 	}
 	/**
