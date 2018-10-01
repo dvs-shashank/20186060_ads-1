@@ -79,7 +79,7 @@ class Node {
  */
 class Steque {
 	/**
-	 * head
+	 * head.
 	 */
 	private Node head;
 	/**
