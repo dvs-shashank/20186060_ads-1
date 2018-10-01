@@ -38,9 +38,9 @@ class Node {
 	 *
 	 * time complexity 1.
 	 *
-	 * @param      value1  The value.
+	 * @param      value  The value.
 	 */
-	public void setItem(final int value1) {
+	public void setItem(final int value) {
 		this.value = value;
 	}
 	/**
@@ -79,7 +79,7 @@ class Node {
  */
 class Steque {
 	/**
-	 * head.
+	 * head
 	 */
 	private Node head;
 	/**
