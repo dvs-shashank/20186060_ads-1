@@ -38,7 +38,7 @@ class Node {
 	 *
 	 * time complexity 1.
 	 *
-	 * @param      value  The value.
+	 * @param      value1  The value.
 	 */
 	public void setItem(final int value1) {
 		this.value = value;
