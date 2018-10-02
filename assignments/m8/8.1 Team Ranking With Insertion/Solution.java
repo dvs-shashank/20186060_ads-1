@@ -5,12 +5,17 @@ import java.util.Scanner;
  */
 class Solution {
 	/**
+	 *time complexity 1.
+	 *
 	 * Constructs the object.
 	 */
 	Solution() {
 
 	}
 	/**
+	 *
+	 *time complexity n.
+	 *
 	 * main method.
 	 *
 	 * @param      args  The arguments
@@ -24,7 +29,7 @@ class Solution {
 			String[] stringArr = tableAsAString.split(",");
 			insert.addTeam(new Team(stringArr[0],
 			                              Integer.parseInt(stringArr[1]), Integer.parseInt(stringArr[2]),
-			                              Integer.parseInt(stringArr[2 + 1])));
+			                              Integer.parseInt(stringArr[3])));
 		}
 		insert.sort();
 		System.out.println(insert);
