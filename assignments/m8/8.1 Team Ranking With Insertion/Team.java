@@ -34,21 +34,21 @@ class Team implements Comparable {
 	public int compareTo(final Object object) {
 		//@Override
 		Team other = (Team) object;
-		if (this.getWins() > other.getWins()) {
-			return 1;
-		} else if(this.getWins() < other.getWins()) {
-			return -1;
-		}
-		if (this.getLosses() > other.getLosses()) {
-			return 1;
-		} else if(this.getLosses() < other.getLosses()) {
-			return -1;
-		}
-		if (this.getDraws() > other.getDraws()) {
-			return 1;
-		} else if(this.getDraws() < other.getDraws()) {
-			return -1;
-		}
-		return 0;
-	}
+        if (this.getWins() > other.getWins()) {
+            return +1;
+        } else if (this.getWins() < other.getWins()) {
+            return -1;
+        }
+        if (this.getLosses() > other.getLosses()) {
+            return -1;
+        } else if (this.getLosses() < other.getLosses()) {
+            return +1;
+        }
+        if (this.getDraws() > other.getDraws()) {
+            return +1;
+        } else if (this.getDraws() < other.getDraws()) {
+            return -1;
+        }
+        return 0;
+    }
 }
