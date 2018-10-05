@@ -68,9 +68,9 @@ public final class Solution {
             switch (tokens[0]) {
             case "insertAt":
                 if (Integer.parseInt(tokens[1]) < 0) {
-                    System.out.println("Cant insert at this position.");
+                    System.out.println("Can't insert at this position.");
                 } else if (Integer.parseInt(tokens[1]) > list.getSize() + 1) {
-                    System.out.println("Cant insert at this position.");
+                    System.out.println("Can't insert at this position.");
                 } else {
                     list.insertAt(Integer.parseInt(tokens[1]),
                         Integer.parseInt(tokens[2]));
