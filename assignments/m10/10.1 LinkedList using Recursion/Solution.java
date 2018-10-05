@@ -49,7 +49,7 @@ class LinkedList {
 		return this.size;
 	}
 	/**
-	 * inserts at position
+	 * inserts at position.
 	 *
 	 * @param      node1    The node 1
 	 * @param      count    The count
@@ -57,7 +57,8 @@ class LinkedList {
 	 *
 	 * @return     node.
 	 */
-	public Node insert(final Node node1, final int count, final int element) {
+	public Node insert(final Node node1,
+		final int count, final int element) {
 		if (count == 0) {
 			return new Node(element, node1);
 		}
@@ -66,12 +67,13 @@ class LinkedList {
 		return node1;
 	}
 	/**
-	 * insert at 
+	 * insert at.
 	 *
 	 * @param      pos    The position
 	 * @param      item1  The item 1
 	 */
-	public void insertAt(final int pos, final int item1) {
+	public void insertAt(final int pos,
+		final int item1) {
 		head = insert(head, pos, item1);
 	}
 	/**

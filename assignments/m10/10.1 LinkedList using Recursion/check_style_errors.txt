@@ -1,14 +1,10 @@
 Starting audit...
 [ERROR] F:\Git files\20186060_ads-1\assignments\m10\10.1 LinkedList using Recursion\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m10\10.1 LinkedList using Recursion\Solution.java:51: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m10\10.1 LinkedList using Recursion\Solution.java:60: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m10\10.1 LinkedList using Recursion\Solution.java:68: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m10\10.1 LinkedList using Recursion\Solution.java:69: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m10\10.1 LinkedList using Recursion\Solution.java:136: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m10\10.1 LinkedList using Recursion\Solution.java:137: Line is longer than 80 characters (found 94). [LineLength]
 [ERROR] F:\Git files\20186060_ads-1\assignments\m10\10.1 LinkedList using Recursion\Solution.java:138: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m10\10.1 LinkedList using Recursion\Solution.java:140: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m10\10.1 LinkedList using Recursion\Solution.java:141: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m10\10.1 LinkedList using Recursion\Solution.java:147: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] F:\Git files\20186060_ads-1\assignments\m10\10.1 LinkedList using Recursion\Solution.java:139: Line is longer than 80 characters (found 94). [LineLength]
+[ERROR] F:\Git files\20186060_ads-1\assignments\m10\10.1 LinkedList using Recursion\Solution.java:140: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] F:\Git files\20186060_ads-1\assignments\m10\10.1 LinkedList using Recursion\Solution.java:142: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] F:\Git files\20186060_ads-1\assignments\m10\10.1 LinkedList using Recursion\Solution.java:143: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] F:\Git files\20186060_ads-1\assignments\m10\10.1 LinkedList using Recursion\Solution.java:149: Line is longer than 80 characters (found 86). [LineLength]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 7 errors.
