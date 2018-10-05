@@ -137,8 +137,8 @@ public final class Solution {
                 if (Integer.parseInt(tokens[1]) < 0) {
                     System.out.println(
                         "Can't insert at this position.");
-                } else if (Integer.parseInt(tokens[1]) 
-                    > list.getSize() + 1) {
+                } else if (Integer.parseInt(tokens[1])
+                           > list.getSize() + 1) {
                     System.out.println(
                         "Can't insert at this position.");
                 } else {
