@@ -42,17 +42,17 @@ public final class Solution {
         Scanner yuvi = new Scanner(System.in);
         Insertion insert = new Insertion();
         int qualifiedStudents = Integer.parseInt(yuvi.nextLine());
-        qstud = qualifiedStudents;
+        //qstud = qualifiedStudents;
         int vacancies = Integer.parseInt(yuvi.nextLine());
-        vacancy = vacancies;
+        //vacancy = vacancies;
         int unreservedVacancies = Integer.parseInt(yuvi.nextLine());
-        open = unreservedVacancies;
+        //open = unreservedVacancies;
         int bcVacancies = Integer.parseInt(yuvi.nextLine());
-        bc = bcVacancies;
+        //bc = bcVacancies;
         int scVacancies = Integer.parseInt(yuvi.nextLine());
-        sc = scVacancies;
+        //sc = scVacancies;
         int stVacancies = Integer.parseInt(yuvi.nextLine());
-        st = stVacancies;
+        //st = stVacancies;
         while (yuvi.hasNext()) {
             String studentInfo = yuvi.nextLine();
             String[] studentInfoArr = studentInfo.split(",");
