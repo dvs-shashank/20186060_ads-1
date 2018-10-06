@@ -86,7 +86,7 @@ class Insertion {
 				s += "\n";
 			
 		}
-		s += students[i].getStudent();
+		//s += students[i].getStudent();
 		return s;
 	}
 }
