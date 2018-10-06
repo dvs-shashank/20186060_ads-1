@@ -5,7 +5,7 @@ class Student {
     /**
      * magic number.
      */
-    public int SEVEN = 6;
+    public static final int SEVEN = 6;
     /**
      * Constructs the object.
      */
@@ -152,12 +152,12 @@ class Student {
             return +1;
         } else if (this.getSub2Marks() < other.getSub2Marks()) {
             return -1;
-        } 
+        }
         if (Integer.parseInt(this.dob.substring(SEVEN))
-            > Integer.parseInt(other.dob.substring(SEVEN))) {
+                > Integer.parseInt(other.dob.substring(SEVEN))) {
             return +1;
         } else if (Integer.parseInt(this.dob.substring(SEVEN))
-            < Integer.parseInt(other.dob.substring(SEVEN))) {
+                   < Integer.parseInt(other.dob.substring(SEVEN))) {
             return -1;
         }
         return 0;
