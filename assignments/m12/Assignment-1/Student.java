@@ -148,9 +148,11 @@ class Student {
             return +1;
         } else if (this.getSub2Marks() < other.getSub2Marks()) {
             return -1;
-        } if (Integer.parseInt(this.dob.substring(7)) > Integer.parseInt(other.dob.substring(7))) {
+        } if (Integer.parseInt(this.dob.substring(7)) >
+            Integer.parseInt(other.dob.substring(7))) {
             return +1;
-        } else if (Integer.parseInt(this.dob.substring(7)) < Integer.parseInt(other.dob.substring(7))) {
+        } else if (Integer.parseInt(this.dob.substring(7)) <
+            Integer.parseInt(other.dob.substring(7))) {
             return -1;
         }
         return 0;
