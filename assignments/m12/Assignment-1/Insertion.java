@@ -1,3 +1,6 @@
+/**
+ * Class for insertion.
+ */
 class Insertion {
     /**
      * Students variable.
