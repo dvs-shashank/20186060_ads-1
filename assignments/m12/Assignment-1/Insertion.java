@@ -30,7 +30,7 @@ class Insertion {
 	}
 	/**
 	 * Gets the team.
-	 * 
+	 *
 	 * time complexity 1.
 	 *
 	 * @param      index  The index
@@ -58,7 +58,7 @@ class Insertion {
 	}
 	/**
 	 * swap objects.
-	 * 
+	 *
 	 * time complexity 1.
 	 *
 	 * @param      team  The team
@@ -82,7 +82,9 @@ class Insertion {
 		int i = 0;
 		for (i = 0; i < size - 1; i++) {
 			s += students[i].getStudent() + "," + students[i].getTotalMarks() + "," + students[i].getCategory();
-			s += "\n";
+			if (i < size - 2) {
+				s += "\n";
+			}
 		}
 		s += students[i].getStudent();
 		return s;
