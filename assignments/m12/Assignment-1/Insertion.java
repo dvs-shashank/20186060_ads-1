@@ -80,44 +80,11 @@ class Insertion {
 	public String toString() {
 		String s = "";
 		int i = 0;
-		int j = 0;
 		for (i = 0; i < size - 1; i++) {
-			int flag = 0;
-			if (Solution.sc == 0) {
-				flag = 1;
-				j = flag;
-			} else if (Solution.sc > 0) {
-				Solution.sc--;
-			}
-			if (Solution.st == 0) {
-				j = flag;
-			} else if (Solution.st > 0) {
-				Solution.st--;
-			}
-			if (Solution.bc == 0) {
-				flag = 1;
-				j = flag;
-
-			} else if (Solution.bc > 0) {
-				Solution.bc--;
-			}
-			if (Solution.open == 0) {
-				flag = 1;
-				j = flag;
-			} else if (Solution.bc > 0) {
-				Solution.bc--;
-			}
-
-			if (flag == 0) {
-				s += students[i].getStudent() + "," + students[i].getTotalMarks() + "," + students[i].getCategory();
-				s += "\n";
-			} else {
-				s += "\n";
-			}
-		}
-		if (j != 1) {
 			s += students[i].getStudent() + "," + students[i].getTotalMarks() + "," + students[i].getCategory();
+			s += "\n";
 		}
+		s += students[i].getStudent() + "," + students[i].getTotalMarks() + "," + students[i].getCategory();
 		return s;
 	}
 }
