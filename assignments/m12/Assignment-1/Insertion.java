@@ -81,7 +81,8 @@ class Insertion {
 		String s = "";
 		int i = 0;
 		for (i = 0; i < size - 1; i++) {
-			s += students[i].getStudent() + ",";
+			s += students[i].getStudent() + "," + students[i].getTotalMarks() + "," + students[i].getCategory();
+			s += "\n";
 		}
 		s += students[i].getStudent();
 		return s;

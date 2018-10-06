@@ -21,7 +21,8 @@ Starting audit...
 [ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:45:94: Expected @param tag for 'totMarks'. [JavadocMethod]
 [ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:45:104: Parameter category should be final. [FinalParameters]
 [ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:45:111: Expected @param tag for 'category'. [JavadocMethod]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:86: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:87:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:54:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:89: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:90:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 24 errors.
+Checkstyle ends with 25 errors.

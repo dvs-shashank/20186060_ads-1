@@ -51,6 +51,9 @@ class Student {
 		this.totalMarks = totMarks;
 		this.reservation = category;
 	}
+	public String getCategory() {
+		return this.reservation;
+	}
 	/**
 	 * Gets the student.
 	 *
