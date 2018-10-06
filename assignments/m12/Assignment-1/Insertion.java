@@ -86,18 +86,26 @@ class Insertion {
 			if (Solution.sc == 0) {
 				flag = 1;
 				j = flag;
+			} else if (Solution.sc > 0) {
+				Solution.sc--;
 			}
 			if (Solution.st == 0) {
 				j = flag;
+			} else if (Solution.st > 0) {
+				Solution.st--;
 			}
 			if (Solution.bc == 0) {
 				flag = 1;
 				j = flag;
 
+			} else if (Solution.bc > 0) {
+				Solution.bc--;
 			}
 			if (Solution.open == 0) {
 				flag = 1;
 				j = flag;
+			} else if (Solution.bc > 0) {
+				Solution.bc--;
 			}
 
 			if (flag == 0) {
