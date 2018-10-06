@@ -83,12 +83,19 @@ class Insertion {
     public String toString() {
         String s = "";
         int i = 0;
+        int stCount = Solution.st;
         for (i = 0; i < size - 1; i++) {
             //String x = students[i].getStudent() + "," + students[i].getTotalMarks() + "," + students[i].getCategory();
             // if (x.equals("")) {
             //  s += "\n";
             //  break;
             // }
+            if (stCount != 0) {
+                s += students[i].getStudent() + "," + students[i].getTotalMarks() +
+                     "," + students[i].getCategory();
+                s += "\n";
+                break;
+            }
             s += students[i].getStudent() + "," + students[i].getTotalMarks() +
                  "," + students[i].getCategory();
             s += "\n";
