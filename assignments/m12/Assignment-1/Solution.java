@@ -34,6 +34,8 @@ public final class Solution {
 			                        Integer.parseInt(studentInfoArr[5]),
 			                        studentInfoArr[6]));
 		}
+		insert.sort();
+        System.out.println(insert);
 	}
 
 }
