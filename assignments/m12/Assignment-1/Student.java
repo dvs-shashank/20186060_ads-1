@@ -39,8 +39,17 @@ class Student {
 
 
 	/**
-	 *time complexity 1.
 	 * Constructs the object.
+	 * 
+	 * time complexity 1.
+	 *
+	 * @param      studName     The stud name
+	 * @param      dateOfBirth  The date of birth
+	 * @param      marks1       The marks 1
+	 * @param      marks2       The marks 2
+	 * @param      marks3       The marks 3
+	 * @param      totMarks     The total marks
+	 * @param      category     The category
 	 */
 	Student(String studName, String dateOfBirth, int marks1, int marks2, int marks3, int totMarks, String category) {
 		this.stdName = studName;
@@ -51,6 +60,11 @@ class Student {
 		this.totalMarks = totMarks;
 		this.reservation = category;
 	}
+	/**
+	 * Gets the category.
+	 *
+	 * @return     The category.
+	 */
 	public String getCategory() {
 		return this.reservation;
 	}
