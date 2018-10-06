@@ -81,10 +81,68 @@ class Insertion {
 		String s = "";
 		int i = 0;
 		for (i = 0; i < size - 1; i++) {
-			s += students[i].getStudent() + "," + students[i].getTotalMarks() + "," + students[i].getCategory();
-			s += "\n";
+			String cat = students[i].getCategory();
+			if (Solution.qstud > 0) {
+				if (cat.equals("SC")) {
+					if (Solution.sc > 0) {
+						Solution.sc--;
+						s += students[i].getStudent() + "," + students[i].getTotalMarks() + "," + cat;
+						s += "\n";
+
+					} else {
+						s += "\n";
+						break;
+					}
+					cat = students[i].getCategory();
+					s += students[i].getStudent() + "," + students[i].getTotalMarks() + "," + cat;
+				}
+
+				if (cat.equals("ST")) {
+					if (Solution.st > 0) {
+						Solution.st--;
+						s += students[i].getStudent() + "," + students[i].getTotalMarks() + "," + cat;
+						s += "\n";
+
+					} else {
+						s += "\n";
+						break;
+					}
+					cat = students[i].getCategory();
+					s += students[i].getStudent() + "," + students[i].getTotalMarks() + "," + cat;
+				}
+
+				if (cat.equals("BC")) {
+					if (Solution.bc > 0) {
+						Solution.bc--;
+						s += students[i].getStudent() + "," + students[i].getTotalMarks() + "," + cat;
+						s += "\n";
+
+					} else {
+						s += "\n";
+						break;
+					}
+					cat = students[i].getCategory();
+					s += students[i].getStudent() + "," + students[i].getTotalMarks() + "," + cat;
+				}
+
+			}
+
+			if (cat.equals("Open")) {
+				if (Solution.open > 0) {
+					Solution.open--;
+					s += students[i].getStudent() + "," + students[i].getTotalMarks() + "," + cat;
+					s += "\n";
+
+				} else {
+					s += "\n";
+					break;
+				}
+				cat = students[i].getCategory();
+				s += students[i].getStudent() + "," + students[i].getTotalMarks() + "," + cat;
+			}
 		}
-		s += students[i].getStudent() + "," + students[i].getTotalMarks() + "," + students[i].getCategory();
+
+
 		return s;
 	}
 }

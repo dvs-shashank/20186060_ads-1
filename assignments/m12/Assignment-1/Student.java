@@ -5,7 +5,7 @@ class Student {
 	/**
 	 * Constructs the object.
 	 */
-	Student(String b,int a) {
+	Student() {
 
 	}
 	/**
