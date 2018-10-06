@@ -1,6 +1,7 @@
 Starting audit...
-[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:8:22: Name 'SEVEN' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:8:22: Variable 'SEVEN' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:155:9: '}' at column 9 should be alone on a line. [RightCurly]
+[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:8:16: Name 'SEVEN' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:8:16: Variable 'SEVEN' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:8:24: '6' is a magic number. [MagicNumber]
+[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:155: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 4 errors.
