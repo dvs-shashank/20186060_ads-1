@@ -53,6 +53,7 @@ Aishwarya,48,Open
 Manoj,39,SC
 Anjali,38,SC
 Aryan,32,ST
+Shreya,23,SC
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -125,6 +126,7 @@ Aishwarya,48,Open
 Manoj,39,SC
 Anjali,38,SC
 Aryan,32,ST
+Shreya,23,SC
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -152,6 +154,7 @@ rahul,73,Open
 Priyanka,70,Open
 Amit,70,Open
 Tanya,66,BC
+Abhishek,60,BC
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -182,6 +185,7 @@ rahul,73,Open
 Priyanka,70,Open
 Amit,70,Open
 Tanya,66,BC
+Abhishek,60,BC
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -259,6 +263,7 @@ Manoj,39,Open
 Anjali,38,Open
 Aryan,32,Open
 Shreya,23,Open
+shyam,23,Open
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -338,4 +343,5 @@ Aishwarya,48,Open
 Anjali,38,SC
 Manoj,32,SC
 Aryan,32,ST
+Shreya,23,SC
 ----------------------------------------
