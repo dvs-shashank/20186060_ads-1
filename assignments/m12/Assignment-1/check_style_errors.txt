@@ -1,16 +1,2 @@
 Starting audit...
-[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:43: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:54: Line is longer than 80 characters (found 121). [LineLength]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:54:17: Parameter studName should be final. [FinalParameters]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:54:34: Parameter dateOfBirth should be final. [FinalParameters]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:54:54: Parameter marks1 should be final. [FinalParameters]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:54:66: Parameter marks2 should be final. [FinalParameters]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:54:78: Parameter marks3 should be final. [FinalParameters]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:54:90: Parameter totMarks should be final. [FinalParameters]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:54:104: Parameter category should be final. [FinalParameters]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:103: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:104:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 13 errors.
