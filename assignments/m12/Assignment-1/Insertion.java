@@ -82,16 +82,19 @@ class Insertion {
 		int i = 0;
 		for (i = 0; i < size - 1; i++) {
 			if (Solution.sc == 0) {
-				return "" + "\n";
+				s += "\n";
 			}
 			if (Solution.st == 0) {
-				return "" + "\n";
+				s += "\n";
 			}
 			if (Solution.bc == 0) {
-				return "" + "\n";
+				s += "\n";
 			}
 			if (Solution.open == 0) {
-				return "" + "\n";
+				s += "\n";
+			}
+			if (s.equals("\n")) {
+				continue;
 			}
 			s += students[i].getStudent() + "," + students[i].getTotalMarks() + "," + students[i].getCategory();
 			s += "\n";
