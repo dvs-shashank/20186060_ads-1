@@ -1,10 +1,6 @@
 Starting audit...
-[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:151:9: '}' at column 9 should be alone on a line. [RightCurly]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:151:51: '7' is a magic number. [MagicNumber]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:151:55: '>' should be on a new line. [OperatorWrap]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:152:50: '7' is a magic number. [MagicNumber]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:154:56: '7' is a magic number. [MagicNumber]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:154:60: '<' should be on a new line. [OperatorWrap]
-[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:155:50: '7' is a magic number. [MagicNumber]
+[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:8:22: Name 'SEVEN' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:8:22: Variable 'SEVEN' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] F:\Git files\20186060_ads-1\assignments\m12\Assignment-1\Student.java:155:9: '}' at column 9 should be alone on a line. [RightCurly]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 3 errors.
