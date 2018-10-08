@@ -25,10 +25,10 @@ class MinPriorityQueue<Yuvi extends Comparable<Yuvi>> {
     public boolean isMinHeap() {
         for (int i = 0; i < this.array.length - 2; i++) {
             if (less(i + 1, i)) {
-                return true;
+                return false;
             }
         }
-        return false;
+        return true;
     }
     /**
      * less function.
