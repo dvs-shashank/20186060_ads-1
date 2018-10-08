@@ -1,22 +1,8 @@
 Starting audit...
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:5: Type Javadoc comment is missing @param <Yuvi> tag. [JavadocType]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:72: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:73: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:76: Line is longer than 80 characters (found 115). [LineLength]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:91: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:92: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:93: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:95: Line is longer than 80 characters (found 117). [LineLength]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:109: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:110: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:110:79: ')' is preceded with whitespace. [ParenPad]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:111: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:113: Line is longer than 80 characters (found 115). [LineLength]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:126: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:127: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:127:79: ')' is preceded with whitespace. [ParenPad]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:128: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:130: Line is longer than 80 characters (found 118). [LineLength]
+[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:98: Line is longer than 80 characters (found 97). [LineLength]
+[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:113:59: ')' is preceded with whitespace. [ParenPad]
+[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:116: Line is longer than 80 characters (found 95). [LineLength]
+[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:130:59: ')' is preceded with whitespace. [ParenPad]
+[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:133: Line is longer than 80 characters (found 98). [LineLength]
 Audit done.
-Checkstyle ends with 19 errors.
+Checkstyle ends with 5 errors.
