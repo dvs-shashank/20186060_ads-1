@@ -1,8 +1,5 @@
 Starting audit...
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:98: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:113:59: ')' is preceded with whitespace. [ParenPad]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:116: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:130:59: ')' is preceded with whitespace. [ParenPad]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:133: Line is longer than 80 characters (found 98). [LineLength]
+[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:115:59: ')' is preceded with whitespace. [ParenPad]
+[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m13\13.1 isMinHeap\Solution.java:133:59: ')' is preceded with whitespace. [ParenPad]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 2 errors.

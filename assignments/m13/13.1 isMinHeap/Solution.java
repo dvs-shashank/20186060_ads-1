@@ -76,7 +76,7 @@ public final class Solution {
                         strTokens[len] = tokens[len];
                     }
                     MinPriorityQueue<String> minimum
-                    = new MinPriorityQueue<String>(strTokens);
+                        = new MinPriorityQueue<String>(strTokens);
                     System.out.println(minimum.isMinHeap());
                 } else {
                     System.out.println(false);
@@ -95,7 +95,8 @@ public final class Solution {
                     for (int i = 0; i < tokens.length; i++) {
                         intTokens[i] = Integer.parseInt(tokens[i]);
                     }
-                    MinPriorityQueue<Integer> minimum = new MinPriorityQueue<Integer>(intTokens);
+                    MinPriorityQueue<Integer> minimum =
+                        new MinPriorityQueue<Integer>(intTokens);
                     System.out.println(minimum.isMinHeap());
                 } else {
                     System.out.println(false);
@@ -109,11 +110,13 @@ public final class Solution {
                 String input = yuvraj.nextLine();
                 String[] tokens = input.split(",");
                 if (tokens.length > 0) {
-                    Float[] floatTokens = new Float[tokens.length];
+                    Float[] floatTokens =
+                        new Float[tokens.length];
                     for (int i = 0; i < tokens.length; i++ ) {
                         floatTokens[i] = Float.parseFloat(tokens[i]);
                     }
-                    MinPriorityQueue<Float> minimum = new MinPriorityQueue<Float>(floatTokens);
+                    MinPriorityQueue<Float> minimum =
+                        new MinPriorityQueue<Float>(floatTokens);
                 } else {
                     System.out.println(false);
                 }
@@ -130,7 +133,8 @@ public final class Solution {
                     for (int i = 0; i < tokens.length; i++ ) {
                         doubleTokens[i] = Double.parseDouble(tokens[i]);
                     }
-                    MinPriorityQueue<Double> minimum = new MinPriorityQueue<Double>(doubleTokens);
+                    MinPriorityQueue<Double> minimum =
+                        new MinPriorityQueue<Double>(doubleTokens);
                 } else {
                     System.out.println(false);
                 }
