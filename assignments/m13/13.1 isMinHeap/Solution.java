@@ -112,7 +112,7 @@ public final class Solution {
                 if (tokens.length > 0) {
                     Float[] floatTokens =
                         new Float[tokens.length];
-                    for (int i = 0; i < tokens.length; i++ ) {
+                    for (int i = 0; i < tokens.length; i++) {
                         floatTokens[i] = Float.parseFloat(tokens[i]);
                     }
                     MinPriorityQueue<Float> minimum =
@@ -130,7 +130,7 @@ public final class Solution {
                 String[] tokens = input.split(",");
                 if (tokens.length > 0) {
                     Double[] doubleTokens = new Double[tokens.length];
-                    for (int i = 0; i < tokens.length; i++ ) {
+                    for (int i = 0; i < tokens.length; i++) {
                         doubleTokens[i] = Double.parseDouble(tokens[i]);
                     }
                     MinPriorityQueue<Double> minimum =
