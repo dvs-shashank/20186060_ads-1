@@ -23,7 +23,7 @@ class MinPriorityQueue<Yuvi extends Comparable<Yuvi>> {
      * @return     True if minimum heap, False otherwise.
      */
     public boolean isMinHeap() {
-        for (int i = 0; i < this.array.length - 1; i++) {
+        for (int i = 0; i < this.array.length - 2; i++) {
             if (less(i + 1, i)) {
                 return true;
             }
