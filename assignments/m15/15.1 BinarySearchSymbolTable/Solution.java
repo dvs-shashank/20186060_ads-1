@@ -130,9 +130,11 @@ class Queue<Item> implements Iterable<Item> {
     }
 
     /**
-     * Returns an iterator that iterates over the items in this queue in FIFO order.
+     * Returns an iterator that iterates over the .
+     * items in this queue in FIFO order.
      *
-     * @return an iterator that iterates over the items in this queue in FIFO order
+     * @return an iterator that iterates over the.
+     *  items in this queue in FIFO order.
      */
     public Iterator<Item> iterator()  {
         return new ListIterator<Item>(first);
@@ -219,12 +221,17 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      * Initializes an empty symbol table with the specified initial capacity.
      * @param capacity the maximum capacity
      */
-    public BinarySearchST(int capacity) {
+    public BinarySearchST(final int capacity) {
         keys = (Key[]) new Comparable[capacity];
         vals = (Value[]) new Object[capacity];
     }
-    // resize the underlying arrays
-    private void resize(int capacity) {
+    // resize the underlying arrays.
+    /**
+     * { function_description }
+     *
+     * @param      capacity  The capacity
+     */
+    private void resize(final int capacity) {
         assert capacity >= n;
         Key[]   tempk = (Key[])   new Comparable[capacity];
         Value[] tempv = (Value[]) new Object[capacity];
@@ -265,7 +272,8 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     public boolean contains(final Key key) {
         if (key == null) {
-            throw new IllegalArgumentException("argument to contains() is null");
+            throw new IllegalArgumentException
+            ("argument to contains() is null");
         } else {
             return get(key) != null;
         }
@@ -275,8 +283,9 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      * Returns the value associated with the given key in this symbol table.
      *
      * @param  key the key
-     * @return the value associated with the given key if the key is in the symbol table
-     *         and {@code null} if the key is not in the symbol table
+     * @return the value associated with the
+     * given key if the key is in the symbol table.
+     * and {@code null} if the key is not in the symbol table.
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public Value get(final Key key) {
@@ -574,6 +583,11 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         }
         return queue;
     }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         String s = "";
         int i = 0;
@@ -597,8 +611,11 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     private boolean check() {
         return isSorted() && rankCheck();
     }
-
-    // are the items in the array in ascending order?
+    /**
+     * Determines if sorted.
+     *
+     * @return     True if sorted, False otherwise.
+     */
     private boolean isSorted() {
         for (int i = 1; i < size(); i++) {
             if (keys[i].compareTo(keys[i - 1]) < 0) {
