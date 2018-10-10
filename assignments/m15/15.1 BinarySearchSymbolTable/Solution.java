@@ -650,6 +650,12 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
  */
 public class Solution {
     /**
+     * Constructs the object.
+     */
+    private Solution() {
+
+    }
+    /**
      * main method.
      *
      * @param      args  The arguments
