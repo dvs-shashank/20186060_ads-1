@@ -1,14 +1,38 @@
 import java.util.Scanner;
 import java.util.NoSuchElementException;
 import java.util.Iterator;
+/**
+ * List of .
+ *
+ * @param      <Item>  The item
+ */
 class Queue<Item> implements Iterable<Item> {
-    private Node<Item> first;    // beginning of queue
+    /**
+     * { var_description }
+     */
+    private Node<Item> first;  // beginning of queue
+    /**
+     * { var_description }
+     */
     private Node<Item> last;     // end of queue
+    /**
+     * { var_description }
+     */
     private int n;               // number of elements on queue
 
-    // helper linked list class
+    /**
+     * Class for node.
+     *
+     * @param      <Item>  The item
+     */
     private static class Node<Item> {
+        /**
+         * { var_description }
+         */
         private Item item;
+        /**
+         * { var_description }
+         */
         private Node<Item> next;
     }
     /**
@@ -56,7 +80,10 @@ class Queue<Item> implements Iterable<Item> {
      *
      * @param  item the item to add
      */
-    public void enqueue(Item item) {
+    public void enqueue(final Item item) {
+        /**
+         * { var_description }
+         */
         Node<Item> oldlast = last;
         last = new Node<Item>();
         last.item = item;
@@ -110,21 +137,45 @@ class Queue<Item> implements Iterable<Item> {
     public Iterator<Item> iterator()  {
         return new ListIterator<Item>(first);
     }
-
     // an iterator, doesn't implement remove() since it's optional
-    private class ListIterator<Item> implements Iterator<Item> {
-        private Node<Item> current;
 
-        public ListIterator(Node<Item> first) {
+    /**
+     * Class for list iterator.
+     *
+     * @param      <Item>  The item
+     */
+    private class ListIterator<Item> implements Iterator<Item> {
+        /**
+         * { var_description }
+         */
+        private Node<Item> current;
+        /**
+         * Constructs the object.
+         *
+         * @param      first  The first
+         */
+        public ListIterator(final Node<Item> first) {
             current = first;
         }
-
+        /**
+         * Determines if it has next.
+         *
+         * @return     True if has next, False otherwise.
+         */
         public boolean hasNext() {
             return current != null;
         }
+        /**
+         * { function_description }
+         */
         public void remove() {
             throw new UnsupportedOperationException();
         }
+        /**
+         * { function_description }
+         *
+         * @return     { description_of_the_return_value }
+         */
         public Item next() {
             if (!hasNext()) {
                 throw new NoSuchElementException();
@@ -135,10 +186,28 @@ class Queue<Item> implements Iterable<Item> {
         }
     }
 }
+/**
+ * Class for binary search st.
+ *
+ * @param      <Key>    The key
+ * @param      <Value>  The value
+ */
 class BinarySearchST<Key extends Comparable<Key>, Value> {
+    /**
+     * { var_description }
+     */
     private static final int INIT_CAPACITY = 2;
+    /**
+     * { var_description }
+     */
     private Key[] keys;
+    /**
+     * { var_description }
+     */
     private Value[] vals;
+    /**
+     * { var_description }
+     */
     private int n = 0;
     /**
      * Initializes an empty symbol table.
@@ -194,7 +263,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      *         {@code false} otherwise
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
-    public boolean contains(Key key) {
+    public boolean contains(final Key key) {
         if (key == null) {
             throw new IllegalArgumentException("argument to contains() is null");
         } else {
@@ -210,7 +279,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      *         and {@code null} if the key is not in the symbol table
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
-    public Value get(Key key) {
+    public Value get(final Key key) {
         if (key == null) {
             throw new IllegalArgumentException("argument to get() is null");
         }
@@ -232,7 +301,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      * @return the number of keys in the symbol table strictly less than {@code key}
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
-    public int rank(Key key) {
+    public int rank(final Key key) {
         if (key == null) {
             throw new IllegalArgumentException("argument to rank() is null");
         } else {
@@ -261,7 +330,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      * @param  val the value
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
-    public void put(Key key, Value val) {
+    public void put(final Key key, final Value val) {
         // System.out.println(key);
         // System.out.println(val);
         if (key == null) {
@@ -298,7 +367,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      * @param  key the key
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
-    public void delete(Key key) {
+    public void delete(final Key key) {
         if (key == null) {
             throw new IllegalArgumentException("argument to delete() is null");
         }
@@ -388,7 +457,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      * @throws IllegalArgumentException unless {@code k} is between 0 and
      *        <em>n</em>–1
      */
-    public Key select(int k) {
+    public Key select(final int k) {
         if (k < 0 || k >= size()) {
             throw new IllegalArgumentException("called select() with invalid argument: " + k);
         }
@@ -403,7 +472,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      * @throws NoSuchElementException if there is no such key
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
-    public Key floor(Key key) {
+    public Key floor(final Key key) {
         if (key == null) {
             throw new IllegalArgumentException("argument to floor() is null");
         }
@@ -426,7 +495,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      * @throws NoSuchElementException if there is no such key
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
-    public Key ceiling(Key key) {
+    public Key ceiling(final Key key) {
         if (key == null) {
             throw new IllegalArgumentException("argument to ceiling() is null");
         }
@@ -448,7 +517,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      * @throws IllegalArgumentException if either {@code lo} or {@code hi}
      *         is {@code null}
      */
-    public int size(Key lo, Key hi) {
+    public int size(final Key lo, final Key hi) {
         if (lo == null) {
             throw new IllegalArgumentException("first argument to size() is null");
         }
@@ -487,7 +556,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      * @throws IllegalArgumentException if either {@code lo} or {@code hi}
      *         is {@code null}
      */
-    public Iterable<Key> keys(Key lo, Key hi) {
+    public Iterable<Key> keys(final Key lo, final Key hi) {
         if (lo == null) {
             throw new IllegalArgumentException("first argument to keys() is null");
         }
@@ -520,7 +589,11 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     /***************************************************************************
      *  Check internal invariants.
      ***************************************************************************/
-
+    /**
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     private boolean check() {
         return isSorted() && rankCheck();
     }
@@ -534,8 +607,13 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         }
         return true;
     }
-
     // check that rank(select(i)) = i
+
+    /**
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     private boolean rankCheck() {
         for (int i = 0; i < size(); i++) {
             if (i != rank(select(i))) {
