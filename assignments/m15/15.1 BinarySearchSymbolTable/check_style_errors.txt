@@ -1,21 +1,9 @@
 Starting audit...
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:10: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:14: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:18: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:29: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:33: First sentence should end with a period. [JavadocStyle]
 [ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:41:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:133: Line is longer than 80 characters (found 84). [LineLength]
 [ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:135: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:148: First sentence should end with a period. [JavadocStyle]
 [ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:157:9: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:157:46: 'first' hides a field. [HiddenField]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:168: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:174: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:196: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:200: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:204: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:208: First sentence should end with a period. [JavadocStyle]
 [ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:215:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:222:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:222:27: Parameter capacity should be final. [FinalParameters]
@@ -45,10 +33,8 @@ Starting audit...
 [ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:570: 'for' construct must use '{}'s. [NeedBraces]
 [ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:577:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:591: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:592: First sentence should end with a period. [JavadocStyle]
 [ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:602:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:612: First sentence should end with a period. [JavadocStyle]
 [ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:634:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:643: Line is longer than 80 characters (found 83). [LineLength]
 Audit done.
-Checkstyle ends with 51 errors.
+Checkstyle ends with 37 errors.

@@ -4,19 +4,19 @@ import java.util.Iterator;
 /**
  * List of .
  *
- * @param      <Item>  The item
+ * @param      <Item>  The item.
  */
 class Queue<Item> implements Iterable<Item> {
     /**
-     * { var_description }
+     * { var_description }.
      */
     private Node<Item> first;  // beginning of queue
     /**
-     * { var_description }
+     * { var_description }.
      */
     private Node<Item> last;     // end of queue
     /**
-     * { var_description }
+     * { var_description }.
      */
     private int n;               // number of elements on queue
 
@@ -27,11 +27,11 @@ class Queue<Item> implements Iterable<Item> {
      */
     private static class Node<Item> {
         /**
-         * { var_description }
+         * { var_description }.
          */
         private Item item;
         /**
-         * { var_description }
+         * { var_description }.
          */
         private Node<Item> next;
     }
@@ -82,7 +82,7 @@ class Queue<Item> implements Iterable<Item> {
      */
     public void enqueue(final Item item) {
         /**
-         * { var_description }
+         * { var_description }.
          */
         Node<Item> oldlast = last;
         last = new Node<Item>();
@@ -121,7 +121,7 @@ class Queue<Item> implements Iterable<Item> {
      * @return the sequence of items in FIFO order, separated by spaces
      */
     public String toString() {
-        StringBuffer s = new StringBuffer();
+        StringBuilder s = new StringBuilder();
         for (Item item : this) {
             s.append(item);
             s.append(' ');
@@ -137,7 +137,7 @@ class Queue<Item> implements Iterable<Item> {
     public Iterator<Item> iterator()  {
         return new ListIterator<Item>(first);
     }
-    // an iterator, doesn't implement remove() since it's optional
+    // an iterator, doesn't implement remove() since it's optional.
 
     /**
      * Class for list iterator.
@@ -146,13 +146,13 @@ class Queue<Item> implements Iterable<Item> {
      */
     private class ListIterator<Item> implements Iterator<Item> {
         /**
-         * { var_description }
+         * { var_description }.
          */
         private Node<Item> current;
         /**
          * Constructs the object.
          *
-         * @param      first  The first
+         * @param      first  The first.
          */
         public ListIterator(final Node<Item> first) {
             current = first;
@@ -166,15 +166,15 @@ class Queue<Item> implements Iterable<Item> {
             return current != null;
         }
         /**
-         * { function_description }
+         * { function_description }.
          */
         public void remove() {
             throw new UnsupportedOperationException();
         }
         /**
-         * { function_description }
+         * { function_description }.
          *
-         * @return     { description_of_the_return_value }
+         * @return     { description_of_the_return_value }.
          */
         public Item next() {
             if (!hasNext()) {
@@ -194,19 +194,19 @@ class Queue<Item> implements Iterable<Item> {
  */
 class BinarySearchST<Key extends Comparable<Key>, Value> {
     /**
-     * { var_description }
+     * { var_description }.
      */
     private static final int INIT_CAPACITY = 2;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private Key[] keys;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private Value[] vals;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private int n = 0;
     /**
@@ -397,7 +397,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     /**
      * Removes the smallest key and associated value from this symbol table.
      *
-     * @throws NoSuchElementException if the symbol table is empty
+     * @throws NoSuchElementException if the symbol table is empty.
      */
     public void deleteMin() {
         if (isEmpty()) {
@@ -409,7 +409,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     /**
      * Removes the largest key and associated value from this symbol table.
      *
-     * @throws NoSuchElementException if the symbol table is empty
+     * @throws NoSuchElementException if the symbol table is empty.
      */
     public void deleteMax() {
         if (isEmpty()) {
@@ -426,8 +426,8 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     /**
       * Returns the smallest key in this symbol table.
       *
-      * @return the smallest key in this symbol table
-      * @throws NoSuchElementException if this symbol table is empty
+      * @return the smallest key in this symbol table.
+      * @throws NoSuchElementException if this symbol table is empty.
       */
     public Key min() {
         if (isEmpty()) {
@@ -439,8 +439,8 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     /**
      * Returns the largest key in this symbol table.
      *
-     * @return the largest key in this symbol table
-     * @throws NoSuchElementException if this symbol table is empty
+     * @return the largest key in this symbol table.
+     * @throws NoSuchElementException if this symbol table is empty.
      */
     public Key max() {
         if (isEmpty()) {
@@ -590,9 +590,9 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
      *  Check internal invariants.
      ***************************************************************************/
     /**
-     * { function_description }
+     * { function_description }.
      *
-     * @return     { description_of_the_return_value }
+     * @return     { description_of_the_return_value }.
      */
     private boolean check() {
         return isSorted() && rankCheck();
@@ -610,9 +610,9 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     // check that rank(select(i)) = i
 
     /**
-     * { function_description }
+     * { function_description }.
      *
-     * @return     { description_of_the_return_value }
+     * @return     { description_of_the_return_value }.
      */
     private boolean rankCheck() {
         for (int i = 0; i < size(); i++) {
