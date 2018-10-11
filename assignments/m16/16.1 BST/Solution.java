@@ -153,7 +153,7 @@ public final class Solution {
                     System.out.println(bstobj.get(obj));
                 }
 
-				System.out.println(bstobj.get(obj));
+				//System.out.println(bstobj.get(obj));
 				break;
 
 			default:
