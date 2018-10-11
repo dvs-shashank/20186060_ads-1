@@ -139,11 +139,20 @@ public final class Solution {
 				Book obj = new Book(tokens[1], tokens[2],
 				                    Double.parseDouble(tokens[3]));
 				bstobj.put(obj, Integer.parseInt(tokens[4]));
+
+
+
 				break;
 
 			case "get":
 				obj = new Book(tokens[1], tokens[2],
 				               Double.parseDouble(tokens[3]));
+				if (bstobj.get(obj) == -1) {
+                    System.out.println("null");
+                } else {
+                    System.out.println(bstobj.get(obj));
+                }
+
 				System.out.println(bstobj.get(obj));
 				break;
 
