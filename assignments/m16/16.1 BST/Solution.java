@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 class Node {
     /**
-     * { var_description }
+     * { var_description }.
      */
     private Book key;
     /**
@@ -60,7 +60,7 @@ class BinarySearchTree {
     //BookDetails dobj = new BookDetails();
 
     /**
-     * { var_description }
+     * { var_description }.
      */
     private Node root;
     /**
@@ -175,13 +175,12 @@ class Book implements Comparable {
         //this.value = val;
     }
 
-
     /**
-     * { function_description }
+     * { function_description }.
      *
-     * @param      object  The object
+     * @param      object  The object.
      *
-     * @return     { description_of_the_return_value }
+     * @return     { description_of_the_return_value }.
      */
     public int compareTo(final Object object) {
         Book other = (Book) object;
@@ -216,13 +215,13 @@ public final class Solution {
             switch (tokens[0]) {
             case "put":
                 Book obj = new Book(tokens[1], tokens[2],
-                                    Double.parseDouble(tokens[3]));
-                bstobj.put(obj, Integer.parseInt(tokens[4]));
+                                    Double.parseDouble(tokens[2 + 1]));
+                bstobj.put(obj, Integer.parseInt(tokens[2 + 2]));
                 break;
 
             case "get":
                 obj = new Book(tokens[1], tokens[2],
-                               Double.parseDouble(tokens[3]));
+                               Double.parseDouble(tokens[2 + 1]));
                 if (bstobj.get(obj) == -1) {
                     System.out.println("null");
                 } else {
