@@ -424,7 +424,7 @@ public final class Solution {
                 bdobj = new BookDetails(tokens[1], tokens[2],
                                         Float.parseFloat(tokens[2 + 1]));
                 if (bstobj.get(bdobj) == -1) {
-                    System.out.println("nulll");
+                    System.out.println("null");
                 } else {
                     System.out.println(bstobj.get(bdobj));
                 }
