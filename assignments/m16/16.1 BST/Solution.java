@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+/**
+ * Class for node.
+ */
 
 class Node {
 	public Book key;
@@ -16,6 +19,10 @@ class Node {
 	}
 }
 
+/**
+ * Class for binary search tree.
+ */
+
 class BinarySearchTree {
 	//BookDetails dobj = new BookDetails();
 	private Node root;
@@ -26,7 +33,7 @@ class BinarySearchTree {
 	public Node root() {
 		return root;
 	}
-	public int get(Book key) {
+	public int get(final Book key) {
 		//System.out.println("hello");
 		Node x = root;
 		while (x != null) {
@@ -41,11 +48,11 @@ class BinarySearchTree {
 		}
 		return -1;
 	}
-	public void put(Book key, int val) {
+	public void put(final Book key, final int val) {
 		//System.out.println(key.getName()+"put 2 ints "+val);
 		root = put(root, key, val);
 	}
-	private Node put(Node x, Book key, int val) {
+	private Node put(final Node x, final Book key, final int val) {
 		if (x == null) {
 			return new Node(key, val);
 			//break;
