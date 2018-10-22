@@ -10,13 +10,17 @@ class Node {
      */
     private Book key;
     /**
-     * { var_description }
+     * { var_description }.
      */
     public int val;
     /**
-     * { item_description }
+     * { item_description }.
      */
-    public Node left, right;
+    public Node left;
+    /**
+     * { var_description }.
+     */
+    public Node right;
     /**
      * Gets the key.
      *
@@ -66,7 +70,7 @@ class BinarySearchTree {
         root = null;
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @return     { description_of_the_return_value }.
      */
@@ -163,7 +167,6 @@ class Book implements Comparable {
      * @param      naame  The naame
      * @param      athor  The athor
      * @param      amt    The amount
-     * @param      val    The value
      */
     Book(final String naame, final String athor, final double amt) {
         this.name = naame;
@@ -173,7 +176,14 @@ class Book implements Comparable {
     }
 
 
-    public int compareTo(Object object) {
+    /**
+     * { function_description }
+     *
+     * @param      object  The object
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int compareTo(final Object object) {
         Book other = (Book) object;
         return this.name.compareTo(other.name);
     }
