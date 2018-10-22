@@ -1,9 +1,4 @@
 Starting audit...
 [ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:159:39: 'first' hides a field. [HiddenField]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:410:41: '4' is a magic number. [MagicNumber]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:486: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:609: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:676: Class Solution should be declared as final. [FinalClass]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:691: Line is longer than 80 characters (found 83). [LineLength]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 1 errors.

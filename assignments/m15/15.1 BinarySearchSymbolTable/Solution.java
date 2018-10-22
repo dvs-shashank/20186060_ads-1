@@ -407,7 +407,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         keys[n] = null;  // to avoid loitering
         vals[n] = null;
         // resize if 1/4 full
-        if (n > 0 && n == keys.length / 4) {
+        if (n > 0 && n == keys.length / (2 + 2)) {
             resize(keys.length / 2);
         }
         assert check();
@@ -483,7 +483,8 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     public Key select(final int k) {
         if (k < 0 || k >= size()) {
             throw new
-            IllegalArgumentException("called select() with invalid argument: " + k);
+            IllegalArgumentException("called select() with invalid argument: "
+                                     + k);
         }
         return keys[k];
     }
@@ -606,8 +607,9 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         if (lo.compareTo(hi) > 0) {
             return queue;
         }
-        for (int i = rank(lo); i < rank(hi); i++)
+        for (int i = rank(lo); i < rank(hi); i++) {
             queue.enqueue(keys[i]);
+        }
         if (contains(hi)) {
             queue.enqueue(keys[rank(hi)]);
         }
@@ -673,7 +675,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -688,7 +690,8 @@ public class Solution {
     public static void main(final String[] args) {
         Scanner yuvraj = new Scanner(System.in);
         String[] array = yuvraj.nextLine().split(" ");
-        BinarySearchST<String, Integer> st = new BinarySearchST<String, Integer>();
+        BinarySearchST<String, Integer> st = new
+        BinarySearchST<String, Integer>();
         for (int i = 0; i < array.length; i++) {
             st.put(array[i], i);
         }
