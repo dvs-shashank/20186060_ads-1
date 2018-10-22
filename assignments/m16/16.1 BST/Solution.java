@@ -54,14 +54,32 @@ class Node {
 
 class BinarySearchTree {
     //BookDetails dobj = new BookDetails();
-    private Node root;
 
+    /**
+     * { var_description }
+     */
+    private Node root;
+    /**
+     * Constructs the object.
+     */
     BinarySearchTree() {
         root = null;
     }
+    /**
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }.
+     */
     public Node root() {
         return root;
     }
+    /**
+     * getter.
+     *
+     * @param      key   The key.
+     *
+     * @return     { description_of_the_return_value }.
+     */
     public int get(final Book key) {
         //System.out.println("hello");
         Node x = root;
@@ -77,10 +95,25 @@ class BinarySearchTree {
         }
         return -1;
     }
+    /**
+     * { function_description }.
+     *
+     * @param      key   The key
+     * @param      val   The value
+     */
     public void put(final Book key, final int val) {
         //System.out.println(key.getName()+"put 2 ints "+val);
         root = put(root, key, val);
     }
+    /**
+     * { function_description }.
+     *
+     * @param      x     { parameter_description }.
+     * @param      key   The key
+     * @param      val   The value
+     *
+     * @return     { description_of_the_return_value }.
+     */
     private Node put(final Node x, final Book key, final int val) {
         if (x == null) {
             return new Node(key, val);
