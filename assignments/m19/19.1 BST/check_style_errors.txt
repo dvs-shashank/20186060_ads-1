@@ -1,15 +1,6 @@
 Starting audit...
 [ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m19\19.1 BST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m19\19.1 BST\Solution.java:23:8: Unused @param tag for 'bookname'. [JavadocMethod]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m19\19.1 BST\Solution.java:24:8: Unused @param tag for 'bookauthor'. [JavadocMethod]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m19\19.1 BST\Solution.java:25:8: Unused @param tag for 'bookprice'. [JavadocMethod]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m19\19.1 BST\Solution.java:27:30: Expected @param tag for 'bname'. [JavadocMethod]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m19\19.1 BST\Solution.java:28:30: Expected @param tag for 'bauthor'. [JavadocMethod]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m19\19.1 BST\Solution.java:28:51: Expected @param tag for 'bprice'. [JavadocMethod]
 [ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m19\19.1 BST\Solution.java:145:22: Parameter x should be final. [FinalParameters]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m19\19.1 BST\Solution.java:342:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m19\19.1 BST\Solution.java:412: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m19\19.1 BST\Solution.java:435: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m19\19.1 BST\Solution.java:440: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m19\19.1 BST\Solution.java:342: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 3 errors.

@@ -20,9 +20,9 @@ class BookDetails implements Comparable {
      *
      * order of 1.
      *
-     * @param      bookname    The bname
-     * @param      bookauthor  The bauthor
-     * @param      bookprice   The bprice
+     * @param      bname    The bname
+     * @param      bauthor  The bauthor
+     * @param      bprice   The bprice
      */
     BookDetails(final String bname,
                 final String bauthor, final float bprice) {
@@ -339,6 +339,14 @@ class BinarySearchTree {
         Node x = select(root, k);
         return x.key;
     }
+    /**
+     * { function_description }
+     *
+     * @param      x     { parameter_description }
+     * @param      k     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     private Node select(final Node x, final int k) {
         if (x == null) {
             return null;
@@ -409,7 +417,7 @@ public final class Solution {
             case "put":
                 BookDetails bdobj = new BookDetails(tokens[1],
                                                     tokens[2],
-                                                    Float.parseFloat(tokens[2 + 1]));
+                                        Float.parseFloat(tokens[2 + 1]));
                 bstobj.put(bdobj, Integer.parseInt(tokens[2 + 2]));
                 break;
             case "get":
@@ -432,12 +440,14 @@ public final class Solution {
                 break;
             case "floor":
                 bdobj = new BookDetails(tokens[1],
-                                        tokens[2], Float.parseFloat(tokens[2 + 1]));
+                                        tokens[2],
+                                        Float.parseFloat(tokens[2 + 1]));
                 System.out.println(bstobj.floor(bdobj));
                 break;
             case "ceiling":
                 bdobj = new BookDetails(tokens[1],
-                                        tokens[2], Float.parseFloat(tokens[2 + 1]));
+                                        tokens[2],
+                                        Float.parseFloat(tokens[2 + 1]));
                 System.out.println(bstobj.ceiling(bdobj));
                 break;
             default:
