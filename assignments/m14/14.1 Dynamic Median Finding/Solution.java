@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -14,13 +14,13 @@ public class Solution {
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int n = Integer.parseInt(scan.nextLine());
+        Scanner yuvi = new Scanner(System.in);
+        int n = Integer.parseInt(yuvi.nextLine());
         MinPQ<Float> minarr = new MinPQ<Float>(n);
         MaxPQ<Float> maxarr = new MaxPQ<Float>(n);
         Float median = 0.0f;
         for (int i = 0; i < n; i++) {
-            Float val = scan.nextFloat();
+            Float val = yuvi.nextFloat();
             if (val > median) {
                 minarr.insert(val);
             } else {
