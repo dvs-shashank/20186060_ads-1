@@ -154,10 +154,10 @@ class Queue<Item> implements Iterable<Item> {
         /**
          * Constructs the object.
          *
-         * @param      first  The first.
+         * @param      fiirst  The first.
          */
-        ListIterator(final Node<Item> first) {
-            current = first;
+        ListIterator(final Node<Item> fiirst) {
+            current = fiirst;
         }
         /**
          * Determines if it has next.

@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m15\15.1 BinarySearchSymbolTable\Solution.java:159:39: 'first' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 1 errors.
