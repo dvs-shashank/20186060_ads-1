@@ -305,10 +305,12 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     }
 
     /**
-     * Returns the number of keys in this symbol table strictly less than {@code key}.
+     * Returns the number of keys in this .
+     * symbol table strictly less than {@code key}.
      *
      * @param  key the key
-     * @return the number of keys in the symbol table strictly less than {@code key}
+     * @return the number of keys in the .
+     * symbol table strictly less than {@code key}
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public int rank(final Key key) {
@@ -332,9 +334,12 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         }
     }
     /**
-     * Inserts the specified key-value pair into the symbol table, overwriting the old
-     * value with the new value if the symbol table already contains the specified key.
-     * Deletes the specified key (and its associated value) from this symbol table
+     * Inserts the specified key-value pair into .
+     * the symbol table, overwriting the old.
+     * value with the new value if the symbol table.
+     *  already contains the specified key.
+     * Deletes the specified key (and its.
+     *  associated value) from this symbol table
      * if the specified value is {@code null}.
      *
      * @param  key the key
@@ -373,7 +378,8 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         assert check();
     }
     /**
-     * Removes the specified key and associated value from this symbol table
+     * Removes the specified key and associated.
+     *  value from this symbol table
      * (if the key is in the symbol table).
      *
      * @param  key the key
@@ -408,9 +414,11 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     }
 
     /**
-     * Removes the smallest key and associated value from this symbol table.
+     * Removes the smallest key and associated.
+     *  value from this symbol table.
      *
-     * @throws NoSuchElementException if the symbol table is empty.
+     * @throws NoSuchElementException if.
+     *  the symbol table is empty.
      */
     public void deleteMin() {
         if (isEmpty()) {
@@ -421,9 +429,11 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     }
 
     /**
-     * Removes the largest key and associated value from this symbol table.
+     * Removes the largest key and associated.
+     *  value from this symbol table.
      *
-     * @throws NoSuchElementException if the symbol table is empty.
+     * @throws NoSuchElementException if.
+     *  the symbol table is empty.
      */
     public void deleteMax() {
         if (isEmpty()) {
@@ -433,16 +443,12 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         delete(max());
     }
 
-
-    /***************************************************************************
-     *  Ordered symbol table methods.
-     ***************************************************************************/
-
     /**
       * Returns the smallest key in this symbol table.
       *
       * @return the smallest key in this symbol table.
-      * @throws NoSuchElementException if this symbol table is empty.
+      * @throws NoSuchElementException if.
+      *  this symbol table is empty.
       */
     public Key min() {
         if (isEmpty()) {
@@ -483,10 +489,12 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     }
 
     /**
-     * Returns the largest key in this symbol table less than or equal to {@code key}.
+     * Returns the largest key in this symbol.
+     *  table less than or equal to {@code key}.
      *
      * @param  key the key
-     * @return the largest key in this symbol table less than or equal to {@code key}
+     * @return the largest key in this symbol.
+     *  table less than or equal to {@code key}
      * @throws NoSuchElementException if there is no such key
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
@@ -507,10 +515,12 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     }
 
     /**
-     * Returns the smallest key in this symbol table greater than or equal to {@code key}.
+     * Returns the smallest key in this symbol table.
+     *  greater than or equal to {@code key}.
      *
      * @param  key the key
-     * @return the smallest key in this symbol table greater than or equal to {@code key}
+     * @return the smallest key in this symbol table.
+     *  greater than or equal to {@code key}
      * @throws NoSuchElementException if there is no such key
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
@@ -528,13 +538,16 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     }
 
     /**
-     * Returns the number of keys in this symbol table in the specified range.
+     * Returns the number of keys in this symbol.
+     *  table in the specified range.
      *
      * @param lo minimum endpoint
      * @param hi maximum endpoint
-     * @return the number of keys in this symbol table between {@code lo}
+     * @return the number of keys in this symbo.
+     * l table between {@code lo}
      *         (inclusive) and {@code hi} (inclusive)
-     * @throws IllegalArgumentException if either {@code lo} or {@code hi}
+     * @throws IllegalArgumentException if.
+     *  either {@code lo} or {@code hi}
      *         is {@code null}
      */
     public int size(final Key lo, final Key hi) {
@@ -557,8 +570,10 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
     }
 
     /**
-     * Returns all keys in this symbol table as an {@code Iterable}.
-     * To iterate over all of the keys in the symbol table named {@code st},
+     * Returns all keys in this symbol table.
+     *  as an {@code Iterable}.
+     * To iterate over all of the keys in the.
+     *  symbol table named {@code st},
      * use the foreach notation: {@code for (Key key : st.keys())}.
      *
      * @return all keys in this symbol table
@@ -613,11 +628,6 @@ class BinarySearchST<Key extends Comparable<Key>, Value> {
         return s;
     }
 
-
-
-    /***************************************************************************
-     *  Check internal invariants.
-     ***************************************************************************/
     /**
      * { function_description }.
      *
