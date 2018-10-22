@@ -1,10 +1,4 @@
 Starting audit...
 [ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m17\TaxiCabNumbers\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m17\TaxiCabNumbers\Solution.java:24:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m17\TaxiCabNumbers\Solution.java:60:26: Parameter other should be final. [FinalParameters]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m17\TaxiCabNumbers\Solution.java:61: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m17\TaxiCabNumbers\Solution.java:62: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m17\TaxiCabNumbers\Solution.java:84:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m17\TaxiCabNumbers\Solution.java:89: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 1 errors.
