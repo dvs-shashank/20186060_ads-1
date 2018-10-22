@@ -40,12 +40,12 @@ class Node {
     /**
      * Constructs the object.
      *
-     * @param      key   The key
-     * @param      val   The value
+     * @param      keey   The key
+     * @param      vaal   The value
      */
-    public Node(final Book key, final int val) {
-        this.key = key;
-        this.val = val;
+    Node(final Book keey, final int vaal) {
+        this.key = keey;
+        this.val = vaal;
         left = null;
         right = null;
         //this.size = size;
