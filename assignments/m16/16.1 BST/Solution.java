@@ -6,21 +6,24 @@ import java.util.Scanner;
 
 class Node {
     /**
-     * { var_description }.
+     * { key}.
      */
     private Book key;
     /**
-     * { var_description }.
+     * { val }.
      */
     public int val;
     /**
-     * { item_description }.
+     * { left }.
      */
     public Node left;
     /**
-     * { var_description }.
+     * { right }.
      */
     public Node right;
+
+
+
     /**
      * Gets the key.
      *
@@ -70,7 +73,7 @@ class BinarySearchTree {
         root = null;
     }
     /**
-     * { function_description }.
+     * { root determining }.
      *
      * @return     { description_of_the_return_value }.
      */
@@ -100,7 +103,7 @@ class BinarySearchTree {
         return -1;
     }
     /**
-     * { function_description }.
+     * { put the key and values }.
      *
      * @param      key   The key
      * @param      val   The value
@@ -110,7 +113,7 @@ class BinarySearchTree {
         root = put(root, key, val);
     }
     /**
-     * { function_description }.
+     * { put the k,v pair }.
      *
      * @param      x     { parameter_description }.
      * @param      key   The key
