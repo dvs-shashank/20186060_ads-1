@@ -139,9 +139,6 @@ public final class Solution {
 				Book obj = new Book(tokens[1], tokens[2],
 				                    Double.parseDouble(tokens[3]));
 				bstobj.put(obj, Integer.parseInt(tokens[4]));
-
-
-
 				break;
 
 			case "get":

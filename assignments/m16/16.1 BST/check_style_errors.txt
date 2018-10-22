@@ -33,6 +33,6 @@ Starting audit...
 [ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m16\16.1 BST\Solution.java:140: Line is longer than 80 characters (found 83). [LineLength]
 [ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m16\16.1 BST\Solution.java:140:79: '3' is a magic number. [MagicNumber]
 [ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m16\16.1 BST\Solution.java:141:73: '4' is a magic number. [MagicNumber]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m16\16.1 BST\Solution.java:149:74: '3' is a magic number. [MagicNumber]
+[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m16\16.1 BST\Solution.java:146:74: '3' is a magic number. [MagicNumber]
 Audit done.
 Checkstyle ends with 35 errors.
