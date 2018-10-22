@@ -17,12 +17,12 @@ class BookDetails implements Comparable {
     private float price;
     /**
      * Constructs the object.
-     * 
+     *
      * order of 1.
      *
-     * @param      bookname    The bookname
-     * @param      bookauthor  The bookauthor
-     * @param      bookprice   The bookprice
+     * @param      bookname    The bname
+     * @param      bookauthor  The bauthor
+     * @param      bookprice   The bprice
      */
     BookDetails(final String bname,
                 final String bauthor, final float bprice) {
@@ -65,8 +65,13 @@ class BookDetails implements Comparable {
         BookDetails that = (BookDetails) object;
         return this.name.compareTo(that.name);
     }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
-        return getName()+", "+getAuthor()+", "+getPrice();
+        return getName() + ", " + getAuthor() + ", " + getPrice();
     }
 }
 /**
@@ -104,8 +109,9 @@ class BinarySearchTree {
         /**
          * Constructs the object.
          *
-         * @param      key1   The key
-         * @param      val1  The value
+         * @param      key1   The key 1
+         * @param      val1   The value 1
+         * @param      siize  The siize
          */
         private Node(final BookDetails key1, final int val1, final int siize) {
             this.key = key1;
@@ -177,10 +183,10 @@ class BinarySearchTree {
      * overloaded constructor.
      * time complexity is O(logN)
      * @param      x   root node.
-     * @param      key   The key
-     * @param      val   The value
+     * @param      key   The key.
+     * @param      val   The value.
      *
-     * @return root
+     * @return root.
      */
     private Node put(final Node x, final BookDetails key, final int val) {
         if (x == null) {
@@ -258,10 +264,10 @@ class BinarySearchTree {
     /**
      *
      *
-     * @param      x     { parameter_description }
+     * @param      x     { parameter_description }.
      * @param      key   The key
      *
-     * @return     { description_of_the_return_value }
+     * @return     { description_of_the_return_value }.
      */
     private Node floor(final Node x, final BookDetails key) {
         if (x == null) {
@@ -282,11 +288,11 @@ class BinarySearchTree {
         }
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      key   The key
      *
-     * @return     { description_of_the_return_value }
+     * @return     { description_of_the_return_value }.
      */
     public BookDetails ceiling(final BookDetails key) {
         Node x = ceiling(root, key);
@@ -297,12 +303,12 @@ class BinarySearchTree {
         }
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
-     * @param      x     { parameter_description }
+     * @param      x     { parameter_description }.
      * @param      key   The key
      *
-     * @return     { description_of_the_return_value }
+     * @return     { description_of_the_return_value }.
      */
     private Node ceiling(final Node x, final BookDetails key) {
         if (x == null) {
@@ -323,11 +329,11 @@ class BinarySearchTree {
         return ceiling(x.right, key);
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
-     * @param      k     { parameter_description }
+     * @param      k     { parameter_description }.
      *
-     * @return     { description_of_the_return_value }
+     * @return     { description_of_the_return_value }.
      */
     public BookDetails select(final int k) {
         Node x = select(root, k);
@@ -347,11 +353,11 @@ class BinarySearchTree {
         }
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      key   The key
      *
-     * @return     { description_of_the_return_value }
+     * @return     { description_of_the_return_value }.
      */
     public int rank(final BookDetails key) {
         return rank(key, root);
@@ -359,12 +365,12 @@ class BinarySearchTree {
 
     // Number of keys in the subtree less than key.
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      key   The key
-     * @param      x     { parameter_description }
+     * @param      x     { parameter_description }.
      *
-     * @return     { description_of_the_return_value }
+     * @return     { description_of_the_return_value }.
      */
     private int rank(final BookDetails key, final Node x) {
         if (x == null) {
@@ -383,7 +389,7 @@ class BinarySearchTree {
 /**
  * client program.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -402,7 +408,8 @@ public class Solution {
             switch (tokens[0]) {
             case "put":
                 BookDetails bdobj = new BookDetails(tokens[1],
-                                                    tokens[2], Float.parseFloat(tokens[2 + 1]));
+                                                    tokens[2],
+                                                    Float.parseFloat(tokens[2 + 1]));
                 bstobj.put(bdobj, Integer.parseInt(tokens[2 + 2]));
                 break;
             case "get":
