@@ -403,7 +403,7 @@ class BinarySearchTree {
      *
      * @return  Node
      */
-    private Node deleteMin( Node x) {
+    private Node deleteMin(final Node x) {
         if (x.left == null) {
             return x.right;
         }
@@ -424,7 +424,7 @@ class BinarySearchTree {
      *
      * @return   Node
      */
-    private Node deleteMax( Node x) {
+    private Node deleteMax(final Node x) {
         if (x.right == null) {
             return x.left;
         }
@@ -437,7 +437,7 @@ class BinarySearchTree {
      *
      * @param      key   The key
      */
-    public void delete( BookDetails key) {
+    public void delete(final BookDetails key) {
         root = delete(root, key);
     }
     /**
@@ -448,7 +448,7 @@ class BinarySearchTree {
      *
      * @return Node.
      */
-    private Node delete( Node x,  BookDetails key) {
+    private Node delete(final Node x, final BookDetails key) {
         Node x1 = x;
         if (x1 == null) {
             return null;
