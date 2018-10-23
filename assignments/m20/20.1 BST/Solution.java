@@ -536,7 +536,7 @@ public final class Solution {
                 break;
             case "delete":
                 deobj = new BookDetails(tokens[1],
-                    tokens[2], Float.parseFloat(tokens[4]));
+                    tokens[2], Float.parseFloat(tokens[3]));
                 bstobj.delete(deobj);
 
             default:

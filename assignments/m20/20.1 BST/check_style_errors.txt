@@ -8,6 +8,6 @@ Starting audit...
 [ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m20\20.1 BST\Solution.java:451:25: '(' is followed by whitespace. [ParenPad]
 [ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m20\20.1 BST\Solution.java:451:26: Parameter x should be final. [FinalParameters]
 [ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m20\20.1 BST\Solution.java:451:35: Parameter key should be final. [FinalParameters]
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m20\20.1 BST\Solution.java:539:56: '4' is a magic number. [MagicNumber]
+[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m20\20.1 BST\Solution.java:539:56: '3' is a magic number. [MagicNumber]
 Audit done.
 Checkstyle ends with 10 errors.
