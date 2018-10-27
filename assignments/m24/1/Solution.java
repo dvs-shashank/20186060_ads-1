@@ -251,8 +251,13 @@ public final class Solution {
             switch (Integer.parseInt(outTokens[2])) {
             case 1:
                 try {
-                    System.out.println(bstobj.get(
-                                           Integer.parseInt(outTokens[1])));
+                    Student obj = bstobj.get(Integer.parseInt(outTokens[1]));
+                    if (obj != null) {
+                        System.out.println(obj);
+                    } else {
+                        System.out.println("Student doesn't exists...");
+                    }
+                    
                 } catch (Exception e) {
                     System.out.println("Student doesn't exists...");
                     //System.out.println("case 1 lo");
@@ -260,8 +265,8 @@ public final class Solution {
                 break;
             case 2:
                 try {
-                    //Student obj = bstobj.get(Integer.parseInt(outTokens[1]));
-                    System.out.println(bstobj.get(Integer.parseInt(outTokens[1])).output());
+                    Student obj = bstobj.get(Integer.parseInt(outTokens[1]));
+                    System.out.println(obj.output());
                     // if (obj.equals(null)) {
                     //     System.out.println("Student doesn't exists...");
                     // }
