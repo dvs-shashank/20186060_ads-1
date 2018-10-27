@@ -159,6 +159,10 @@ class BinarySearchTree {
         }
     }
 
+    // public double something() {
+    //     getmarks();
+    // }
+
     /**
      * get method.
      *time complexity is O(logN)
@@ -247,12 +251,12 @@ public final class Solution {
         while (n2 < numOutputs) {
             String[] outTokens = yuvi.nextLine().split(" ");
             if (outTokens[0].equals("BE")) {
-                Student temp = bstobj.get(
-                                           Integer.parseInt(outTokens[1]));
-                if (temp.getmarks() <= Double.parseDouble(outTokens[1]) && temp.getmarks() <= Double.parseDouble(outTokens[2])) {
+                //Student temp = bstobj.get(
+                  //                         Integer.parseInt(outTokens[1]));
+                //if (temp.getmarks() <= Double.parseDouble(outTokens[1]) && temp.getmarks() <= Double.parseDouble(outTokens[2])) {
                     System.out.println(bstobj.get(
                                            Integer.parseInt(outTokens[1])));
-                }
+                
                 
             }
             n2++;
