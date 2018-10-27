@@ -9,8 +9,14 @@ Alice
 Bob
 John
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:230)
+141, Clark, 76.7
+118, Rivest, 78.4
+111, Abegg, 65.4
+135, Fred, 49.4
+107, Wayne, 98.3
+101, Alice, 88.7
+102, Bob, 100.7
+110, John, 56.4
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -28,8 +34,7 @@ Expected Output:
 45.4
 99.3
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:230)
+
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -51,8 +56,15 @@ Student doesn't exists...
 Student doesn't exists...
 Student doesn't exists...
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:230)
+104, Knuth, 100.1
+141, Clark, 76.4
+111, Abegg, 65.7
+107, Wayne, 98.3
+110, John, 56.7
+132, Hank, 11.2
+88, Jeannette Caines, 99.3
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:241)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -557,6 +569,179 @@ Robert Macfarlane
 John Hale
 53.79
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:230)
+10064, Michael Hale, 74.62
+10084, Bradley Jackson, 63.57
+10139, Madhur Jaffrey, 11.58
+10125, Ruth H. Jacobs, 40.95
+10131, Richard Jacoby, 48.67
+10189, Kady MacDonald Denton, 84.78
+10130, Kate Jacoby, 45.39
+10179, Charles B. Macdonald, 66.2
+10015, Laura Holmes Haddad, 36.24
+10025, Debra W. Haffner, 44.63
+10111, Kathryn Jacobi, 4.731
+10017, Brad Haddin, 20.62
+10016, Gerry Hadden, 54.08
+10152, Kathryn Ma, 50.88
+10163, T. T. Macan, 20.62
+10129, Simon Jacobson, 59.67
+10078, Carla Jablonski, 88.48
+10028, Sammy Hagar, 99.38
+10012, Taylor Hackford, 62.17
+10064, Michael Hale, 74.62
+10012, Taylor Hackford, 62.17
+10035, Katharina Hagena, 75.18
+10196, Gracie MacGregor, 53.79
+10056, David Halberstam, 46.81
+10002, Michael Haag, 90.74
+10031, Chuck Hagel, 19.32
+10135, Sophie Jaff, 63.33
+10035, Katharina Hagena, 75.18
+10080, Colin Jack, 14.88
+10018, Margaret Peterson Haddix, 3.336
+10032, Bethany Hagen, 32.81
+10146, Aparna Jain, 62.03
+10003, Pamela Haag, 10.31
+10001, H3CZ, 97.83
+10192, Olivia Mace, 46.77
+10025, Debra W. Haffner, 44.63
+10106, Tracey Jackson, 52.12
+10034, Steve Hagen, 41.03
+10070, Yossi Klein Halevi, 87.0
+10053, Nafisa Haji, 35.46
+10046, David Haig, 62.74
+10044, Mary Downing Hahn, 89.14
+10169, Roger Lea MacBride, 85.27
+10143, Steph Jagger, 59.62
+10083, Ian Jackman, 17.5
+10141, Guru Jagat, 40.06
+10191, Carrington MacDuffie, 18.28
+10166, Tony Macaulay, 87.26
+10077, Cynthia Jabar, 28.69
+10074, Carla Hall, 23.87
+10064, Michael Hale, 74.62
+10114, David Jacobs, 69.29
+10118, John Hornor Jacobs, 91.51
+10177, Ann-Marie MacDonald, 86.65
+10190, Jane MacDougall, 72.2
+10072, Amanda Hall, 11.09
+10148, Shaili Jain M.D., 35.71
+10099, Peter Jackson, 17.2
+10081, Dana C. Jack, 61.6
+10165, Catherine Macaulay, 21.24
+10118, John Hornor Jacobs, 91.51
+10147, Namita Jain, 99.9
+10056, David Halberstam, 46.81
+10100, Richard Jackson, 17.86
+10099, Peter Jackson, 17.2
+10048, Kellie Hailes, 17.54
+10176, Andrew Macdonald, 66.37
+10127, Howard Jacobson, 28.71
+10158, Bernie Mac, 10.42
+10138, Al Jaffee, 35.74
+10022, Tessa Hadley, 98.87
+10055, A.N.D Haksar, 54.45
+10175, Mary MacCracken, 90.69
+10143, Steph Jagger, 59.62
+10084, Bradley Jackson, 63.57
+10136, Michele Jaffe, 16.5
+10147, Namita Jain, 99.9
+10106, Tracey Jackson, 52.12
+10192, Olivia Mace, 46.77
+10128, Shane Jacobson, 93.97
+10033, Don Hagen, 42.81
+10011, Thomas Hackett, 3.391
+10096, Mick Jackson, 31.38
+10132, Sarah Jacoby, 75.6
+10053, Nafisa Haji, 35.46
+10035, Katharina Hagena, 75.18
+10140, Nasim Marie Jafry, 35.81
+10173, M MacCallum, 76.56
+10178, Betty MacDonald, 26.33
+10005, Jessie Haas, 73.58
+10176, Andrew Macdonald, 66.37
+10101, Robert Jackson, 89.61
+10042, Daniel Hahn, 69.74
+10058, Kristin Halbrook, 79.87
+10173, M MacCallum, 76.56
+10041, William Hague, 4.893
+10012, Taylor Hackford, 62.17
+10025, Debra W. Haffner, 44.63
+10009, Heather Hach, 83.43
+10063, Kathleen Hale, 47.48
+10076, Terrence J, 93.95
+10126, Andrew Jacobson, 23.21
+10159, Julie Mac, 72.14
+10198, Kinley MacGregor, 79.49
+10147, Namita Jain, 99.9
+10009, Heather Hach, 83.43
+10064, Michael Hale, 74.62
+10081, Dana C. Jack, 61.6
+10175, Mary MacCracken, 90.69
+10161, Kevin MacAllister, 28.06
+10129, Simon Jacobson, 59.67
+10067, Sheila Hale, 5.739
+10188, Sara MacDonald, 12.7
+10176, Andrew Macdonald, 66.37
+10120, John W. Jacobs M.D., 1.603
+10009, Heather Hach, 83.43
+10013, Gene Hackman, 87.16
+10093, Kennell Jackson, 17.55
+10175, Mary MacCracken, 90.69
+10074, Carla Hall, 23.87
+10135, Sophie Jaff, 63.33
+10142, Joie Jager-Hyman, 76.01
+10086, Emma Jackson, 16.78
+10090, Jeremy Jackson, 5.843
+10192, Olivia Mace, 46.77
+10014, David H. Hackworth, 36.4
+10124, Rachel Jacobs, 24.4
+10125, Ruth H. Jacobs, 40.95
+10109, Dana Jacobi, 43.33
+10167, Bonnie MacBird, 26.54
+10138, Al Jaffee, 35.74
+10173, M MacCallum, 76.56
+10121, Lynn F. Jacobs, 87.6
+10191, Carrington MacDuffie, 18.28
+10077, Cynthia Jabar, 28.69
+10027, Marylin Hafner, 30.75
+10013, Gene Hackman, 87.16
+10037, Marilyn Hagerty, 35.6
+10073, Araminta Hall, 87.74
+10114, David Jacobs, 69.29
+10038, Keach Hagey, 92.85
+10073, Araminta Hall, 87.74
+10037, Marilyn Hagerty, 35.6
+10032, Bethany Hagen, 32.81
+10188, Sara MacDonald, 12.7
+10063, Kathleen Hale, 47.48
+10015, Laura Holmes Haddad, 36.24
+10005, Jessie Haas, 73.58
+10046, David Haig, 62.74
+10117, John Jacobs, 98.13
+10013, Gene Hackman, 87.16
+10175, Mary MacCracken, 90.69
+10098, Nate Jackson, 60.37
+10041, William Hague, 4.893
+10102, Ruby Jackson, 65.06
+10153, Saskia Maarleveld, 30.1
+10106, Tracey Jackson, 52.12
+10008, Auston Habershaw, 35.14
+10060, Bruce Hale, 81.72
+10029, Rawi Hage, 40.1
+10107, Jo Jackson King, 79.31
+10077, Cynthia Jabar, 28.69
+10131, Richard Jacoby, 48.67
+10176, Andrew Macdonald, 66.37
+10042, Daniel Hahn, 69.74
+10069, Vicky Hales-Dutton, 39.78
+10070, Yossi Klein Halevi, 87.0
+10018, Margaret Peterson Haddix, 3.336
+10085, Ellen Jackson, 53.48
+10165, Catherine Macaulay, 21.24
+10050, Peter Haining, 11.63
+10174, Annie Maccoby, 82.63
+10193, David Macfarlane, 91.38
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:241)
 ----------------------------------------

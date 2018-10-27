@@ -231,6 +231,7 @@ public final class Solution {
                                          tokens[1],
                                          Double.parseDouble(tokens[2]));
             bstobj.put(Integer.parseInt(tokens[0]), stdobj);
+            n1++;
         }
         int numOutputs = Integer.parseInt(yuvi.nextLine());
         while (n2 < numOutputs) {
@@ -246,6 +247,7 @@ public final class Solution {
             default:
                 break;
             }
+            n2++;
         }
     }
 }
