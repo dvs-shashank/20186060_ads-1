@@ -71,7 +71,7 @@ class Student implements Comparable {
      * @return     String representation of the object.
      */
     public String toString() {
-        return getname(); //getrollNo() + ", " + getname() + ", " + getmarks();
+        return getmarks() + ""; //getrollNo() + ", " + getname() + ", " + getmarks();
     }
     /**
      * { function_description }.
@@ -256,8 +256,6 @@ public final class Solution {
                 //if (temp.getmarks() <= Double.parseDouble(outTokens[1]) && temp.getmarks() <= Double.parseDouble(outTokens[2])) {
                     System.out.println(bstobj.get(
                                            Integer.parseInt(outTokens[1])));
-                
-                
             }
             n2++;
         }
