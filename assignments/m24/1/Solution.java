@@ -248,7 +248,7 @@ public final class Solution {
             String[] outTokens = yuvi.nextLine().split(" ");
             switch (Integer.parseInt(outTokens[2])) {
             case 1:
-                if (bstobj.get(Integer.parseInt(outTokens[1])).equals(null)) {
+                if (bstobj.get(Integer.parseInt(outTokens[1])).equals("null")) {
                     System.out.println("Student doesn't exists...");
                 } else {
                     System.out.println(bstobj.get(
@@ -256,7 +256,7 @@ public final class Solution {
                 }
                 break;
             case 2:
-                if (bstobj.get(Integer.parseInt(outTokens[1])).equals(null)) {
+                if (bstobj.get(Integer.parseInt(outTokens[1])).equals("null")) {
                     System.out.println("Student doesn't exists...");
                 } else {
                     Student obj = bstobj.get(Integer.parseInt(outTokens[1]));
