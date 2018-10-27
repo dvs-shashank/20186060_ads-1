@@ -73,6 +73,12 @@ class Student implements Comparable {
     public String toString() {
         return getname(); //getrollNo() + ", " + getname() + ", " + getmarks();
     }
+
+    public double output() {
+        return this.marks;
+
+    }
+
 }
 /**
  * Class for binary search tree.
@@ -249,7 +255,9 @@ public final class Solution {
                 if (bstobj.get(Integer.parseInt(outTokens[1])).equals(-1)) {
                     System.out.println("Student doesn't exists...");
                 } else {
-                    System.out.println(bstobj.get(Integer.parseInt(outTokens[1])));
+                    Student obj = bstobj.get(Integer.parseInt(outTokens[1]));
+                    System.out.println(obj.output());
+                    //System.out.println(bstobj.get(Integer.parseInt(outTokens[1])));
                 }
 
             default:
