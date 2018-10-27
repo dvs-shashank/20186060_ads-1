@@ -254,8 +254,9 @@ public final class Solution {
                 //Student temp = bstobj.get(
                   //                         Integer.parseInt(outTokens[1]));
                 //if (temp.getmarks() <= Double.parseDouble(outTokens[1]) && temp.getmarks() <= Double.parseDouble(outTokens[2])) {
-                    System.out.println(bstobj.get(
-                                           Integer.parseInt(outTokens[1])));
+                    //System.out.println(bstobj.get(
+                                           //Integer.parseInt(outTokens[1])));
+                System.out.println(bstobj);
             }
             n2++;
         }
