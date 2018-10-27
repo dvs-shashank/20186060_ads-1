@@ -1,0 +1,5 @@
+Starting audit...
+[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m24\2\Solution.java:252: Line is longer than 80 characters (found 129). [LineLength]
+[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m24\2\Solution.java:256: Line has trailing spaces. [RegexpSingleline]
+Audit done.
+Checkstyle ends with 2 errors.
