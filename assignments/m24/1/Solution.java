@@ -73,12 +73,15 @@ class Student implements Comparable {
     public String toString() {
         return getname(); //getrollNo() + ", " + getname() + ", " + getmarks();
     }
-
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }.
+     */
     public double output() {
         return this.marks;
 
     }
-
 }
 /**
  * Class for binary search tree.
@@ -245,21 +248,19 @@ public final class Solution {
             String[] outTokens = yuvi.nextLine().split(" ");
             switch (Integer.parseInt(outTokens[2])) {
             case 1:
-                if (bstobj.get(Integer.parseInt(outTokens[1])).equals(-1)) {
+                if (bstobj.get(Integer.parseInt(outTokens[1])).equals(null)) {
                     System.out.println("Student doesn't exists...");
                 } else {
                     System.out.println(bstobj.get(Integer.parseInt(outTokens[1])));
                 }
                 break;
             case 2:
-                if (bstobj.get(Integer.parseInt(outTokens[1])).equals(-1)) {
+                if (bstobj.get(Integer.parseInt(outTokens[1])).equals(null)) {
                     System.out.println("Student doesn't exists...");
                 } else {
                     Student obj = bstobj.get(Integer.parseInt(outTokens[1]));
                     System.out.println(obj.output());
-                    //System.out.println(bstobj.get(Integer.parseInt(outTokens[1])));
                 }
-
             default:
                 break;
             }
@@ -267,4 +268,3 @@ public final class Solution {
         }
     }
 }
-
