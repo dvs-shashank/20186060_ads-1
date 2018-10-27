@@ -250,12 +250,18 @@ public final class Solution {
             String[] outTokens = yuvi.nextLine().split(" ");
             switch (Integer.parseInt(outTokens[2])) {
             case 1:
-                if (bstobj.get(Integer.parseInt(outTokens[1])).equals(null)) {
-                    System.out.println("Student doesn't exists...");
-                } else {
+                try {
                     System.out.println(bstobj.get(
                                            Integer.parseInt(outTokens[1])));
+                } catch (Exception e) {
+                    System.out.println("Student doesn't exists...");
                 }
+                // if (bstobj.get(Integer.parseInt(outTokens[1])).equals(null)) {
+                //     System.out.println("Student doesn't exists...");
+                // } else {
+                //     System.out.println(bstobj.get(
+                //                            Integer.parseInt(outTokens[1])));
+                // }
                 break;
             case 2:
                 try {
@@ -264,14 +270,14 @@ public final class Solution {
                 } catch (Exception e) {
                     System.out.println("Student doesn't exists...");
                 }
-                // Student temp = bstobj.get(Integer.parseInt(outTokens[1]));
-                // if (temp.equals(null)) {
-                //     System.out.println("please go into this if condition...");
-                //     System.out.println("Student doesn't exists...");
-                // } else {
-                //     Student obj = bstobj.get(Integer.parseInt(outTokens[1]));
-                //     System.out.println(obj.output());
-                // }
+            // Student temp = bstobj.get(Integer.parseInt(outTokens[1]));
+            // if (temp.equals(null)) {
+            //     System.out.println("please go into this if condition...");
+            //     System.out.println("Student doesn't exists...");
+            // } else {
+            //     Student obj = bstobj.get(Integer.parseInt(outTokens[1]));
+            //     System.out.println(obj.output());
+            // }
             default:
                 break;
             }
