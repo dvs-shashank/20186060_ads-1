@@ -255,7 +255,7 @@ public final class Solution {
                                            Integer.parseInt(outTokens[1])));
                 } catch (Exception e) {
                     System.out.println("Student doesn't exists...");
-                    System.out.println("case 1 lo");
+                    //System.out.println("case 1 lo");
                 }
                 break;
             case 2:
@@ -267,7 +267,7 @@ public final class Solution {
                     // }
                 } catch (Exception e) {
                     System.out.println("Student doesn't exists...");
-                    System.out.println("case 2 lo");
+                    //System.out.println("case 2 lo");
                 }
             default:
                 break;
