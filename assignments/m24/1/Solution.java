@@ -159,7 +159,7 @@ class BinarySearchTree {
         }
     }
 
-    
+
 
     /**
      * get method.
@@ -258,14 +258,20 @@ public final class Solution {
                 }
                 break;
             case 2:
-                Student temp = bstobj.get(Integer.parseInt(outTokens[1]));
-                if (temp.equals(null)) {
-                    System.out.println("please go into this if condition...");
-                    System.out.println("Student doesn't exists...");
-                } else {
+                try {
                     Student obj = bstobj.get(Integer.parseInt(outTokens[1]));
                     System.out.println(obj.output());
+                } catch (Exception e) {
+                    System.out.println("Student doesn't exists...");
                 }
+                // Student temp = bstobj.get(Integer.parseInt(outTokens[1]));
+                // if (temp.equals(null)) {
+                //     System.out.println("please go into this if condition...");
+                //     System.out.println("Student doesn't exists...");
+                // } else {
+                //     Student obj = bstobj.get(Integer.parseInt(outTokens[1]));
+                //     System.out.println(obj.output());
+                // }
             default:
                 break;
             }

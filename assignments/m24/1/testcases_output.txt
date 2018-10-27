@@ -81,8 +81,11 @@ John
 Hank
 13.3
 Jeannette Caines
+Student doesn't exists...
+Student doesn't exists...
+Student doesn't exists...
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:262)
+	at Solution.main(Solution.java:253)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
