@@ -149,7 +149,7 @@ class BinarySearchTree {
             return x.size;
         }
     }
-    
+
     /**
      * get method.
      *time complexity is O(logN)
@@ -245,6 +245,13 @@ public final class Solution {
                     System.out.println(bstobj.get(Integer.parseInt(outTokens[1])));
                 }
                 break;
+            case 2:
+                if (bstobj.get(Integer.parseInt(outTokens[1])).equals(-1)) {
+                    System.out.println("Student doesn't exists...");
+                } else {
+                    System.out.println(bstobj.get(Integer.parseInt(outTokens[1])));
+                }
+
             default:
                 break;
             }
