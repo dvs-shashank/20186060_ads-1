@@ -82,8 +82,11 @@ Hank
 13.3
 Jeannette Caines
 Student doesn't exists...
+case 2 lo
 Student doesn't exists...
+case 2 lo
 Student doesn't exists...
+case 2 lo
 null
 ----------------------------------------
 ########## Testcase 3: Failed ##########
@@ -962,6 +965,7 @@ Betty Halbreich
 35.6
 Dana C. Jack
 Student doesn't exists...
+case 2 lo
 Elaine Hall
 Bonnie MacBird
 54.45
@@ -1042,6 +1046,7 @@ John W. Jacobs
 David Hagedorn
 Todd Haberkorn
 Student doesn't exists...
+case 2 lo
 Mary Curran Hackett
 Catherine Macaulay
 Kinley MacGregor
