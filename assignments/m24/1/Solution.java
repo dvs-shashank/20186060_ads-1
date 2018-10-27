@@ -71,7 +71,7 @@ class Student implements Comparable {
      * @return     String representation of the object.
      */
     public String toString() {
-        return getrollNo() + ", " + getname() + ", " + getmarks();
+        return getname(); //getrollNo() + ", " + getname() + ", " + getmarks();
     }
 }
 /**
@@ -149,6 +149,7 @@ class BinarySearchTree {
             return x.size;
         }
     }
+    
     /**
      * get method.
      *time complexity is O(logN)
@@ -239,7 +240,7 @@ public final class Solution {
             switch (Integer.parseInt(outTokens[2])) {
             case 1:
                 if (bstobj.get(Integer.parseInt(outTokens[1])).equals(-1)) {
-                    System.out.println("null");
+                    System.out.println("Student doesn't exists...");
                 } else {
                     System.out.println(bstobj.get(Integer.parseInt(outTokens[1])));
                 }
