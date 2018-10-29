@@ -11,7 +11,7 @@ public final class Solution {
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         SeparateChainingHashST<String, Integer> hashobj
-        = new SeparateChainingHashST<String, Integer>();
+            = new SeparateChainingHashST<String, Integer>();
         String[] length = sc.nextLine().split(" ");
         String[] s1 = sc.nextLine().split(" ");
         for (int i = 0; i < s1.length; i++) {
@@ -37,5 +37,4 @@ public final class Solution {
         }
         System.out.println("Yes");
     }
-
 }
