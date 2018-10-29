@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] F:\Git files\ADS-1\20186060_ads-1\assignments\m22\22.1 Ransom Note\Solution.java:11:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 1 errors.
