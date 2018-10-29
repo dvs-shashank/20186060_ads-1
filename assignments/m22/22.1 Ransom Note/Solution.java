@@ -1,5 +1,11 @@
 import java.util.Scanner;
+/**
+ * class Solution.
+ */
 public final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
     }
     public static void main(final String[] args) {
@@ -25,7 +31,7 @@ public final class Solution {
                     hashobj.put(s2[i], hashobj.get(s2[i]) - 1);
                 }
             } else {
-                System.out.println("Noo");
+                System.out.println("No");
                 return;
             }
         }
